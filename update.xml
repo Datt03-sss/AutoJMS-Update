@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-07T20:54:03+07:00</updatedAt>
+  <updatedAt>2026-06-07T20:59:23+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.7</velopackVersion>
       <displayVersion>1.26.7.1</displayVersion>
       <internalBuild>20260607.6</internalBuild>
@@ -17,10 +17,10 @@
 AutoJMS 1.26.7 stable release. Inno is a first-install wrapper only; Velopack owns the single Windows app entry, Start Menu shortcut, uninstall, and update flow. Desktop shortcut follows the Inno checkbox.
       </releaseNotes>
     </channel>
-<channel name="beta" enabled="true" prerelease="true">
+    <channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.7-beta.1</velopackVersion>
       <displayVersion>1.26.7.2</displayVersion>
-      <internalBuild>20260607.beta.3</internalBuild>
+      <internalBuild>20260607.beta.4</internalBuild>
       <releaseTag>v1.26.7-beta.1</releaseTag>
       <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-beta.1/AutoJMS-Installer-1.26.7-beta.1.exe</setupUrl>
       <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-beta.1/AutoJMS-win-Setup.exe</velopackSetupUrl>
@@ -28,7 +28,7 @@ AutoJMS 1.26.7 stable release. Inno is a first-install wrapper only; Velopack ow
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.7 beta.1 release. Inno Setup is the primary first-install wizard; bundled Velopack setup installs into the selected folder only and does not create external shortcuts.
+AutoJMS 1.26.7 beta.1 release. Inno is a first-install wrapper only; Velopack owns the single Windows app entry, Start Menu shortcut, uninstall, and update flow. Desktop shortcut follows the Inno checkbox.
       </releaseNotes>
     </channel>
   </channels>
