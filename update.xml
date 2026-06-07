@@ -1,22 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-07T15:38:45+07:00</updatedAt>
+  <updatedAt>2026-06-07T17:48:32+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
+    <channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.7</velopackVersion>
       <displayVersion>1.26.7.1</displayVersion>
-      <internalBuild>20260607.2</internalBuild>
+      <internalBuild>20260607.3</internalBuild>
       <releaseTag>v1.26.7-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-win-Setup.exe</setupUrl>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-Installer-1.26.7.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.7 stable release. Velopack runtime package updated to 1.2.0 and GitHubSource release pipeline verified.
+AutoJMS 1.26.7 stable release. Inno Setup is now the primary first-install wizard; Velopack Setup remains available for in-app update assets.
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.7-beta.1</velopackVersion>
       <displayVersion>1.26.7.2</displayVersion>
       <internalBuild>20260607.beta.2</internalBuild>
