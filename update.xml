@@ -1,45 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-07T00:00:00+07:00</updatedAt>
-
+  <updatedAt>2026-06-07T15:19:12+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
-
   <channels>
     <channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.6</velopackVersion>
       <displayVersion>1.26.6.1</displayVersion>
       <internalBuild>20260607.1</internalBuild>
-
       <releaseTag>v1.26.6-Release</releaseTag>
       <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.6-Release/AutoJMS-win-Setup.exe</setupUrl>
-      <releaseNotesUrl>https://raw.githubusercontent.com/Datt03-sss/AutoJMS-Update/main/changelog.txt</releaseNotesUrl>
-
+      <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
-
       <releaseNotes>
-Fix lỗi kiểm tra bưu cục trước khi in.
-Bổ sung trạng thái chuyển hoàn, số lần in, người in.
-Tối ưu cập nhật sau khi in.
+AutoJMS 1.26.6 stable release. Velopack GitHub release pipeline enabled.
       </releaseNotes>
     </channel>
-
-    <channel name="beta" enabled="false" prerelease="true">
-      <velopackVersion>1.26.6-beta.1</velopackVersion>
-      <displayVersion>1.26.6.2</displayVersion>
-      <internalBuild>20260607.beta.1</internalBuild>
-
-      <releaseTag>v1.26.6-beta.1</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.6-beta.1/AutoJMS-win-Setup.exe</setupUrl>
-      <releaseNotesUrl>https://raw.githubusercontent.com/Datt03-sss/AutoJMS-Update/main/changelog-beta.txt</releaseNotesUrl>
-
-      <mandatory>false</mandatory>
-      <manualOnly>true</manualOnly>
-
-      <releaseNotes>
+<channel name="beta" enabled="false" prerelease="true"><velopackVersion>1.26.6-beta.1</velopackVersion><displayVersion>1.26.6.2</displayVersion><internalBuild>20260607.beta.1</internalBuild><releaseTag>v1.26.6-beta.1</releaseTag><setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.6-beta.1/AutoJMS-win-Setup.exe</setupUrl><releaseNotesUrl>https://raw.githubusercontent.com/Datt03-sss/AutoJMS-Update/main/changelog-beta.txt</releaseNotesUrl><mandatory>false</mandatory><manualOnly>true</manualOnly><releaseNotes>
 Bản thử nghiệm nội bộ.
 Chỉ dùng khi cần test nhanh lỗi mới.
-      </releaseNotes>
-    </channel>
+      </releaseNotes></channel>
   </channels>
 </AutoJMSUpdateManifest>
