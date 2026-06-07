@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-07T15:37:02+07:00</updatedAt>
+  <updatedAt>2026-06-07T15:38:45+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.7</velopackVersion>
       <displayVersion>1.26.7.1</displayVersion>
       <internalBuild>20260607.2</internalBuild>
@@ -16,17 +16,17 @@
 AutoJMS 1.26.7 stable release. Velopack runtime package updated to 1.2.0 and GitHubSource release pipeline verified.
       </releaseNotes>
     </channel>
-<channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.6-beta.1</velopackVersion>
-      <displayVersion>1.26.6.2</displayVersion>
-      <internalBuild>20260607.beta.1</internalBuild>
-      <releaseTag>v1.26.6-beta.1</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.6-beta.1/AutoJMS-win-Setup.exe</setupUrl>
+    <channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.7-beta.1</velopackVersion>
+      <displayVersion>1.26.7.2</displayVersion>
+      <internalBuild>20260607.beta.2</internalBuild>
+      <releaseTag>v1.26.7-beta.1</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-beta.1/AutoJMS-win-Setup.exe</setupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.6 beta.1 release. Velopack GitHub beta channel enabled.
+AutoJMS 1.26.7 beta.1 release. Velopack runtime package updated to 1.2.0 and beta GitHubSource channel verified.
       </releaseNotes>
     </channel>
   </channels>
