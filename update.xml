@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-07T20:59:23+07:00</updatedAt>
+  <updatedAt>2026-06-10T20:50:40+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
-      <velopackVersion>1.26.7</velopackVersion>
-      <displayVersion>1.26.7.1</displayVersion>
-      <internalBuild>20260607.6</internalBuild>
-      <releaseTag>v1.26.7-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-Installer-1.26.7.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="stable" enabled="true" prerelease="false">
+      <velopackVersion>1.26.8</velopackVersion>
+      <displayVersion>1.26.8.1</displayVersion>
+      <internalBuild>20260610.1</internalBuild>
+      <releaseTag>v1.26.8-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-Release/AutoJMS-Installer-1.26.8.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.7 stable release. Inno is a first-install wrapper only; Velopack owns the single Windows app entry, Start Menu shortcut, uninstall, and update flow. Desktop shortcut follows the Inno checkbox.
+AutoJMS 1.26.8 stable release. Includes About update channel dialog UI polish and latest fixes.
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.7-beta.1</velopackVersion>
       <displayVersion>1.26.7.2</displayVersion>
       <internalBuild>20260607.beta.4</internalBuild>
