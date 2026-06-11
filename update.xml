@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-11T09:58:25+07:00</updatedAt>
+  <updatedAt>2026-06-11T10:01:21+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.9</velopackVersion>
       <displayVersion>1.26.9.1</displayVersion>
       <internalBuild>20260611.1</internalBuild>
@@ -17,18 +17,18 @@
 AutoJMS 1.26.9 stable release. Build warning cleanup and latest stability fixes.
       </releaseNotes>
     </channel>
-<channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.8-beta.1</velopackVersion>
-      <displayVersion>1.26.8.2</displayVersion>
-      <internalBuild>20260610.beta.1</internalBuild>
-      <releaseTag>v1.26.8-beta.1</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-beta.1/AutoJMS-Installer-1.26.8-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-beta.1/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.9-beta.1</velopackVersion>
+      <displayVersion>1.26.9.2</displayVersion>
+      <internalBuild>20260611.beta.1</internalBuild>
+      <releaseTag>v1.26.9-beta.1</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-beta.1/AutoJMS-Installer-1.26.9-beta.1.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-beta.1/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.8 beta.1 release. Includes About update channel dialog UI polish and latest fixes for beta validation.
+AutoJMS 1.26.9 beta.1 release. Beta validation build with latest warning cleanup and stability fixes.
       </releaseNotes>
     </channel>
   </channels>
