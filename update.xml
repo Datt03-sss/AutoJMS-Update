@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-11T10:01:21+07:00</updatedAt>
+  <updatedAt>2026-06-12T18:00:02+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
-      <velopackVersion>1.26.9</velopackVersion>
-      <displayVersion>1.26.9.1</displayVersion>
-      <internalBuild>20260611.1</internalBuild>
-      <releaseTag>v1.26.9-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-Release/AutoJMS-Installer-1.26.9.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="stable" enabled="true" prerelease="false">
+      <velopackVersion>1.26.10</velopackVersion>
+      <displayVersion>1.26.10</displayVersion>
+      <internalBuild>1.26.10.0</internalBuild>
+      <releaseTag>v1.26.10-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.10-Release/AutoJMS-Installer-1.26.10.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.10-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.9 stable release. Build warning cleanup and latest stability fixes.
+AutoJMS stable release 1.26.10.
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.9-beta.1</velopackVersion>
       <displayVersion>1.26.9.2</displayVersion>
       <internalBuild>20260611.beta.1</internalBuild>
