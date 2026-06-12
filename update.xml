@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-12T18:06:57+07:00</updatedAt>
+  <updatedAt>2026-06-12T18:15:18+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.10</velopackVersion>
       <displayVersion>1.26.10</displayVersion>
       <internalBuild>1.26.10.0</internalBuild>
@@ -17,7 +17,7 @@
 AutoJMS stable release 1.26.10.
       </releaseNotes>
     </channel>
-<channel name="beta" enabled="true" prerelease="true">
+    <channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.10-beta.1</velopackVersion>
       <displayVersion>1.26.10 beta 1</displayVersion>
       <internalBuild>1.26.10.1</internalBuild>
