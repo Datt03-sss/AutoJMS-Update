@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-29T01:18:02+07:00</updatedAt>
+  <updatedAt>2026-06-29T01:20:07+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
     <channel name="stable" enabled="true" prerelease="false">
