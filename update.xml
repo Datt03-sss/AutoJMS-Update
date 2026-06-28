@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-28T11:11:02+07:00</updatedAt>
+  <updatedAt>2026-06-28T11:13:10+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.11</velopackVersion>
       <displayVersion>1.26.11</displayVersion>
       <internalBuild>20260628.1</internalBuild>
@@ -17,18 +17,18 @@
 AutoJMS stable release 1.26.11.
       </releaseNotes>
     </channel>
-<channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.10-beta.1</velopackVersion>
-      <displayVersion>1.26.10 beta 1</displayVersion>
-      <internalBuild>20260613.beta.1</internalBuild>
-      <releaseTag>v1.26.10-beta.1-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.10-beta.1-Release/AutoJMS-Installer-1.26.10-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.10-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.12-beta.1</velopackVersion>
+      <displayVersion>1.26.12 beta 1</displayVersion>
+      <internalBuild>20260628.beta.1</internalBuild>
+      <releaseTag>v1.26.12-beta.1-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.12-beta.1-Release/AutoJMS-Installer-1.26.12-beta.1.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.12-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS beta release 1.26.10 beta 1.
+AutoJMS beta release 1.26.12 beta 1.
       </releaseNotes>
     </channel>
   </channels>
