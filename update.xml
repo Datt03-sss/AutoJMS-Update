@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-28T22:44:37+07:00</updatedAt>
+  <updatedAt>2026-06-29T01:18:02+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
-      <velopackVersion>1.26.12</velopackVersion>
-      <displayVersion>1.26.12</displayVersion>
-      <internalBuild>20260628.1</internalBuild>
-      <releaseTag>v1.26.12-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.12-Release/AutoJMS-Installer-1.26.12.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.12-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="stable" enabled="true" prerelease="false">
+      <velopackVersion>1.26.7</velopackVersion>
+      <displayVersion>1.26.7</displayVersion>
+      <internalBuild>1.26.7.0</internalBuild>
+      <releaseTag>v1.26.7-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-Installer-1.26.7.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS stable release 1.26.12.
+AutoJMS 1.26.7 stable release.
+- Fix DKCH count isolation and sheet/input counting behavior.
+- Add Google Sheets token broker backend support.
+- Normalize About version display.
+- Bold waybill input fields for easier entry.
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.13-beta.1</velopackVersion>
       <displayVersion>1.26.13 beta 1</displayVersion>
       <internalBuild>20260628.beta.1</internalBuild>
