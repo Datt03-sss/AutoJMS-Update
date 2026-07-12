@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-07-12T21:14:25+07:00</updatedAt>
+  <updatedAt>2026-07-12T21:16:28+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.8</velopackVersion>
       <displayVersion>1.26.8</displayVersion>
       <internalBuild>1.26.8.0</internalBuild>
@@ -19,20 +19,20 @@ AutoJMS 1.26.8 stable release.
 - Built with full Velopack update package and Inno first-install bootstrapper.
       </releaseNotes>
     </channel>
-<channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.7-beta.1</velopackVersion>
-      <displayVersion>1.26.7 beta 1</displayVersion>
-      <internalBuild>1.26.7.1</internalBuild>
-      <releaseTag>v1.26.7-beta.1-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-beta.1-Release/AutoJMS-Installer-1.26.7-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.8-beta.1</velopackVersion>
+      <displayVersion>1.26.8 beta 1</displayVersion>
+      <internalBuild>1.26.8.1</internalBuild>
+      <releaseTag>v1.26.8-beta.1-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-beta.1-Release/AutoJMS-Installer-1.26.8-beta.1.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.7 beta 1 prerelease.
-- Beta build aligned with 1.26.7 stable fixes.
-- Includes DKCH count isolation, Google Sheets broker support, version display normalization, and bold waybill inputs.
+AutoJMS 1.26.8 beta 1 prerelease.
+- Beta build aligned with 1.26.8 stable changes.
+- Built with full Velopack update package and Inno first-install bootstrapper.
       </releaseNotes>
     </channel>
   </channels>
