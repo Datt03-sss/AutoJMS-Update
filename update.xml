@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-06-29T01:22:02+07:00</updatedAt>
+  <updatedAt>2026-07-12T21:12:40+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
-      <velopackVersion>1.26.7</velopackVersion>
-      <displayVersion>1.26.7</displayVersion>
-      <internalBuild>1.26.7.0</internalBuild>
-      <releaseTag>v1.26.7-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-Installer-1.26.7.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.7-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="stable" enabled="true" prerelease="false">
+      <velopackVersion>1.26.8</velopackVersion>
+      <displayVersion>1.26.8</displayVersion>
+      <internalBuild>1.26.8.0</internalBuild>
+      <releaseTag>v1.26.8-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-Release/AutoJMS-Installer-1.26.8.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.7 stable release.
-- Fix DKCH count isolation and sheet/input counting behavior.
-- Add Google Sheets token broker backend support.
-- Normalize About version display.
-- Bold waybill input fields for easier entry.
+AutoJMS 1.26.8 stable release.
+- Includes hybrid local-first + Supabase realtime sync changes from origin/main.
+- Built with full Velopack update package and Inno first-install bootstrapper.
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.7-beta.1</velopackVersion>
       <displayVersion>1.26.7 beta 1</displayVersion>
       <internalBuild>1.26.7.1</internalBuild>
