@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-08-06T11:53:00+07:00</updatedAt>
+  <updatedAt>2026-08-06T11:56:22+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
-      <velopackVersion>1.26.8</velopackVersion>
-      <displayVersion>1.26.8</displayVersion>
-      <internalBuild>1.26.8.0</internalBuild>
-      <releaseTag>v1.26.8-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-Release/AutoJMS-Installer-1.26.8.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.8-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="stable" enabled="true" prerelease="false">
+      <velopackVersion>1.26.9</velopackVersion>
+      <displayVersion>1.26.9</displayVersion>
+      <internalBuild>20260806.1</internalBuild>
+      <releaseTag>v1.26.9-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-Release/AutoJMS-Installer-1.26.9.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-AutoJMS 1.26.8 stable release.
-- Includes hybrid local-first + Supabase realtime sync changes from origin/main.
-- Built with full Velopack update package and Inno first-install bootstrapper.
+AutoJMS stable release.
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.9-beta.1</velopackVersion>
       <displayVersion>1.26.9 beta 1</displayVersion>
       <internalBuild>20260806.beta.1</internalBuild>
