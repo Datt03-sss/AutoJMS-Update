@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-08-06T15:36:43+07:00</updatedAt>
+  <updatedAt>2026-08-10T18:02:43+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.9</velopackVersion>
       <displayVersion>1.26.9</displayVersion>
       <internalBuild>20260806.1</internalBuild>
@@ -21,22 +21,22 @@
 - Cải thiện khả năng đọc dữ liệu trên bảng ở dark theme và chuẩn hóa hiển thị ngày giờ.
       </releaseNotes>
     </channel>
-<channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.9-beta.1</velopackVersion>
-      <displayVersion>1.26.9 beta 1</displayVersion>
-      <internalBuild>20260806.beta.1</internalBuild>
-      <releaseTag>v1.26.9-beta.1-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-beta.1-Release/AutoJMS-Installer-1.26.9-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.9-beta.2</velopackVersion>
+      <displayVersion>1.26.9 beta 2</displayVersion>
+      <internalBuild>20260810.beta.2</internalBuild>
+      <releaseTag>v1.26.9-beta.2-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-beta.2-Release/AutoJMS-Installer-1.26.9-beta.2.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-beta.2-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- Sửa lỗi không nhận được bản cập nhật — GitHub Release trước đây thiếu file index releases.{channel}.json mà Velopack cần đọc.
-- Sửa so sánh version trong dialog “Chọn kênh cập nhật”, giúp nhận diện đúng stable và beta.
-- Nâng cấp luồng ĐKCH, giảm thao tác lặp và hiển thị kết quả xử lý rõ ràng hơn.
+- Sửa lỗi không nhận được bản cập nhật — GitHub Release có đầy đủ file index releases.beta.json mà Velopack cần đọc.
+- Sửa so sánh version trong dialog “Chọn kênh cập nhật”, giúp nhận diện và chọn đúng bản beta mới.
+- Làm mới khu vực NEWBILL của ĐKCH với bố cục rõ ràng, hỗ trợ light, dark và red theme, đồng thời tránh chồng lấn khi đổi kích thước.
+- Cải thiện kết quả và hành trình ĐKCH, giảm thao tác lưu lặp và cho phép sao chép nhanh mã vận đơn.
 - Tối ưu đồng bộ tồn kho và cập nhật nền theo khoảng thời gian người dùng đã chọn.
-- Cải thiện khả năng đọc dữ liệu trên bảng ở dark theme và chuẩn hóa hiển thị ngày giờ.
 
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
