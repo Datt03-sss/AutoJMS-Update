@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-09-12T16:58:22+07:00</updatedAt>
+  <updatedAt>2026-09-12T17:01:14+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
-      <velopackVersion>1.26.9</velopackVersion>
-      <displayVersion>1.26.9</displayVersion>
-      <internalBuild>20260806.1</internalBuild>
-      <releaseTag>v1.26.9-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-Release/AutoJMS-Installer-1.26.9.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.9-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="stable" enabled="true" prerelease="false">
+      <velopackVersion>1.26.11</velopackVersion>
+      <displayVersion>1.26.11</displayVersion>
+      <internalBuild>20260912.1</internalBuild>
+      <releaseTag>v1.26.11-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.11-Release/AutoJMS-Installer-1.26.11.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.11-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- Sửa lỗi không nhận được bản cập nhật — GitHub Release trước đây thiếu file index releases.{channel}.json mà Velopack cần đọc.
-- Sửa so sánh version trong dialog “Chọn kênh cập nhật”, giúp nhận diện đúng stable và beta.
-- Nâng cấp luồng ĐKCH, giảm thao tác lặp và hiển thị kết quả xử lý rõ ràng hơn.
-- Tối ưu đồng bộ tồn kho và cập nhật nền theo khoảng thời gian người dùng đã chọn.
-- Cải thiện khả năng đọc dữ liệu trên bảng ở dark theme và chuẩn hóa hiển thị ngày giờ.
+AutoJMS 1.26.11: Nang cap FullStackOperation (sua ro ri GDI font), ho tro Google Sheet cho ca BASE va ULTRA, tich hop Web Admin Dashboard tai /admin voi modal cap key kieu Grok
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.11-beta.1</velopackVersion>
       <displayVersion>1.26.11 beta 1</displayVersion>
       <internalBuild>20260912.beta.1</internalBuild>
