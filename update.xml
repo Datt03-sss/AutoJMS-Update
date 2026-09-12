@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-08-12T18:25:54+07:00</updatedAt>
+  <updatedAt>2026-09-12T16:58:22+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -22,23 +22,17 @@
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.10-beta.3</velopackVersion>
-      <displayVersion>1.26.10 beta 3</displayVersion>
-      <internalBuild>20260812.beta.3</internalBuild>
-      <releaseTag>v1.26.10-beta.3-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.10-beta.3-Release/AutoJMS-Installer-1.26.10-beta.3.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.10-beta.3-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.11-beta.1</velopackVersion>
+      <displayVersion>1.26.11 beta 1</displayVersion>
+      <internalBuild>20260912.beta.1</internalBuild>
+      <releaseTag>v1.26.11-beta.1-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.11-beta.1-Release/AutoJMS-Installer-1.26.11-beta.1.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.11-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- Sửa lỗi không nhận được bản cập nhật — GitHub Release có đầy đủ file index releases.beta.json mà Velopack cần đọc.
-- Sửa so sánh version trong dialog “Chọn kênh cập nhật”, giúp nhận diện và chọn đúng bản beta mới.
-- Làm mới khu vực NEWBILL của ĐKCH với bố cục rõ ràng, hỗ trợ light, dark và red theme, đồng thời tránh chồng lấn khi đổi kích thước.
-- Cải thiện kết quả và hành trình ĐKCH, giảm thao tác lưu lặp và cho phép sao chép nhanh mã vận đơn.
-- Tối ưu đồng bộ tồn kho và cập nhật nền theo khoảng thời gian người dùng đã chọn.
-
-Bản beta, có thể chưa ổn định.
+AutoJMS 1.26.11 Beta: Nang cap FullStackOperation, ho tro Google Sheet cho ca BASE va ULTRA, bo sung Web Admin Modal kieu Grok
       </releaseNotes>
     </channel>
   </channels>
