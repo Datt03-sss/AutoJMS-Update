@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-09-20T14:49:49+07:00</updatedAt>
+  <updatedAt>2026-09-20T14:57:18+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
-      <velopackVersion>1.26.12</velopackVersion>
-      <displayVersion>1.26.12</displayVersion>
-      <internalBuild>20260913.1</internalBuild>
-      <releaseTag>v1.26.12-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.12-Release/AutoJMS-Installer-1.26.12.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.12-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
-      <releaseNotesUrl></releaseNotesUrl>
-      <mandatory>false</mandatory>
-      <manualOnly>true</manualOnly>
-      <releaseNotes>
-- IN ĐƠN — "In lại đơn": bắt buộc xem trước khi in, cho phép sửa 3 vùng trên nhãn trước khi xuất giấy.
-- IN ĐƠN: tách 4 thẻ sửa riêng biệt, tự lấy tên và số điện thoại người nhận, sửa lại dòng đếm lần in.
-- IN ĐƠN: tự lấy địa chỉ người nhận từ JMS và cảnh báo rõ khi thiếu dữ liệu.
-- IN ĐƠN: bỏ COD/Giao trước khỏi nhãn, tách riêng giờ và ngày in, hiện placeholder ngay từ đầu.
-- IN ĐƠN: ghim vùng dán đè đúng đường kẻ thật của nhãn gốc, giữ tỷ lệ nhãn khi giấy khác khổ 3x3 và xoá vết đè Vùng 1/Vùng 2.
-- Giao diện: thẻ "Mã tuyến" không còn tràn trong ô dán, ô đếm lần in cao bằng thẻ "Mã tuyến".
-- Giao diện: tab con IN ĐƠN tự co giãn bề rộng, không còn giấu nút "In Reverse".
-- Giao diện: cửa sổ tự maximize lại khi đổi độ phân giải màn hình lúc đang chạy.
-      </releaseNotes>
-    </channel>
-    <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.13-beta.1</velopackVersion>
-      <displayVersion>1.26.13 beta 1</displayVersion>
-      <internalBuild>20260920.beta.1</internalBuild>
-      <releaseTag>v1.26.13-beta.1-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.1-Release/AutoJMS-Installer-1.26.13-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+    <channel name="stable" enabled="true" prerelease="false">
+      <velopackVersion>1.26.13</velopackVersion>
+      <displayVersion>1.26.13</displayVersion>
+      <internalBuild>20260920.1</internalBuild>
+      <releaseTag>v1.26.13-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-Release/AutoJMS-Installer-1.26.13.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
@@ -43,6 +22,32 @@
 - IN ĐƠN — In Reverse: sắp xếp theo thời gian gom mới nhất trước, giữ PDF thu hồi trong 10 ngày.
 - IN ĐƠN: giữ mã vận đơn khi chuyển tab con và tự tìm lại, điền sẵn mã tuyến và mã bưu cục khi in lại.
 - IN ĐƠN: báo đúng lỗi nghiệp vụ trả về từ JMS thay vì báo &quot;không có đơn nào&quot;.
+- Mã bưu cục: dữ liệu tách riêng theo từng mã bưu cục — đổi bưu cục là sang bộ dữ liệu riêng, database cũ được tự chuyển sang thư mục theo mã.
+- Mã bưu cục: tab Dashboard, Thời hiệu và Arrival lấy mã theo cấu hình, không còn mã cứng.
+- Cập nhật: nhận được lệnh cập nhật đồng loạt từ quản trị — chỉ một hộp thoại xin phép, hỏi trước khi khởi động lại nên app không tự tắt giữa lúc đang làm.
+- Cập nhật: nhận lệnh ngay giữa ca mà không cần mở lại app, và hiện tiến trình tải trên thanh tiêu đề.
+- Giao diện: Dashboard không còn trượt ngang lộ nền trắng khi kéo qua.
+      </releaseNotes>
+    </channel>
+<channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.13-beta.1</velopackVersion>
+      <displayVersion>1.26.13 beta 1</displayVersion>
+      <internalBuild>20260920.beta.1</internalBuild>
+      <releaseTag>v1.26.13-beta.1-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.1-Release/AutoJMS-Installer-1.26.13-beta.1.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <releaseNotesUrl></releaseNotesUrl>
+      <mandatory>false</mandatory>
+      <manualOnly>true</manualOnly>
+      <releaseNotes>
+- IN ĐƠN — "In Reverse": tab con mới, tìm đơn theo mã vận đơn và xem trước rồi mới in.
+- IN ĐƠN — In Reverse: tách chọn ngày và chọn giờ thành hai ô riêng, thu gọn sáu ô nhập vừa với nội dung.
+- IN ĐƠN — In Reverse: thêm bộ lọc "Dấu Reverse" và bộ lọc đơn chưa in, lưới hiện 20 dòng mỗi trang.
+- IN ĐƠN — In Reverse: lọc theo tên nhân viên kèm danh sách người đang làm, có nút X xoá nhanh ô tên.
+- IN ĐƠN — In Reverse: in không giới hạn số lần, sổ chỉ còn ghi lại lịch sử lượt in.
+- IN ĐƠN — In Reverse: sắp xếp theo thời gian gom mới nhất trước, giữ PDF thu hồi trong 10 ngày.
+- IN ĐƠN: giữ mã vận đơn khi chuyển tab con và tự tìm lại, điền sẵn mã tuyến và mã bưu cục khi in lại.
+- IN ĐƠN: báo đúng lỗi nghiệp vụ trả về từ JMS thay vì báo "không có đơn nào".
 - Mã bưu cục: dữ liệu tách riêng theo từng mã bưu cục — đổi bưu cục là sang bộ dữ liệu riêng, database cũ được tự chuyển sang thư mục theo mã.
 - Mã bưu cục: tab Dashboard, Thời hiệu và Arrival lấy mã theo cấu hình, không còn mã cứng.
 - Cập nhật: nhận được lệnh cập nhật đồng loạt từ quản trị — chỉ một hộp thoại xin phép, hỏi trước khi khởi động lại nên app không tự tắt giữa lúc đang làm.
