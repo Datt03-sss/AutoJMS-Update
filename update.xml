@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-09-20T14:57:18+07:00</updatedAt>
+  <updatedAt>2026-10-01T22:17:06+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-    <channel name="stable" enabled="true" prerelease="false">
+<channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.13</velopackVersion>
       <displayVersion>1.26.13</displayVersion>
       <internalBuild>20260920.1</internalBuild>
       <releaseTag>v1.26.13-Release</releaseTag>
       <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-Release/AutoJMS-Installer-1.26.13.exe</setupUrl>
       <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
-      <releaseNotesUrl></releaseNotesUrl>
-      <mandatory>false</mandatory>
-      <manualOnly>true</manualOnly>
-      <releaseNotes>
-- IN ĐƠN — &quot;In Reverse&quot;: tab con mới, tìm đơn theo mã vận đơn và xem trước rồi mới in.
-- IN ĐƠN — In Reverse: tách chọn ngày và chọn giờ thành hai ô riêng, thu gọn sáu ô nhập vừa với nội dung.
-- IN ĐƠN — In Reverse: thêm bộ lọc &quot;Dấu Reverse&quot; và bộ lọc đơn chưa in, lưới hiện 20 dòng mỗi trang.
-- IN ĐƠN — In Reverse: lọc theo tên nhân viên kèm danh sách người đang làm, có nút X xoá nhanh ô tên.
-- IN ĐƠN — In Reverse: in không giới hạn số lần, sổ chỉ còn ghi lại lịch sử lượt in.
-- IN ĐƠN — In Reverse: sắp xếp theo thời gian gom mới nhất trước, giữ PDF thu hồi trong 10 ngày.
-- IN ĐƠN: giữ mã vận đơn khi chuyển tab con và tự tìm lại, điền sẵn mã tuyến và mã bưu cục khi in lại.
-- IN ĐƠN: báo đúng lỗi nghiệp vụ trả về từ JMS thay vì báo &quot;không có đơn nào&quot;.
-- Mã bưu cục: dữ liệu tách riêng theo từng mã bưu cục — đổi bưu cục là sang bộ dữ liệu riêng, database cũ được tự chuyển sang thư mục theo mã.
-- Mã bưu cục: tab Dashboard, Thời hiệu và Arrival lấy mã theo cấu hình, không còn mã cứng.
-- Cập nhật: nhận được lệnh cập nhật đồng loạt từ quản trị — chỉ một hộp thoại xin phép, hỏi trước khi khởi động lại nên app không tự tắt giữa lúc đang làm.
-- Cập nhật: nhận lệnh ngay giữa ca mà không cần mở lại app, và hiện tiến trình tải trên thanh tiêu đề.
-- Giao diện: Dashboard không còn trượt ngang lộ nền trắng khi kéo qua.
-      </releaseNotes>
-    </channel>
-<channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.13-beta.1</velopackVersion>
-      <displayVersion>1.26.13 beta 1</displayVersion>
-      <internalBuild>20260920.beta.1</internalBuild>
-      <releaseTag>v1.26.13-beta.1-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.1-Release/AutoJMS-Installer-1.26.13-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
@@ -53,6 +27,33 @@
 - Cập nhật: nhận được lệnh cập nhật đồng loạt từ quản trị — chỉ một hộp thoại xin phép, hỏi trước khi khởi động lại nên app không tự tắt giữa lúc đang làm.
 - Cập nhật: nhận lệnh ngay giữa ca mà không cần mở lại app, và hiện tiến trình tải trên thanh tiêu đề.
 - Giao diện: Dashboard không còn trượt ngang lộ nền trắng khi kéo qua.
+      </releaseNotes>
+    </channel>
+    <channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.13-beta.2</velopackVersion>
+      <displayVersion>1.26.13 beta 2</displayVersion>
+      <internalBuild>20261001.beta.2</internalBuild>
+      <releaseTag>v1.26.13-beta.2-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.2-Release/AutoJMS-Installer-1.26.13-beta.2.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.2-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <releaseNotesUrl></releaseNotesUrl>
+      <mandatory>false</mandatory>
+      <manualOnly>true</manualOnly>
+      <releaseNotes>
+- Giao diện: làm mới toàn bộ HOME, ĐKCH, TRA HÀNH TRÌNH, IN ĐƠN và ABOUT theo bộ thiết kế mới; ba theme Light / Red / Dark đồng bộ màu trên mọi tab.
+- Giao diện: thanh tiêu đề mới theo theme, có nhãn trạng thái mạng; cửa sổ luôn phóng to mà không che thanh taskbar.
+- Giao diện: thanh tab mới nằm bên trái, ô chọn trượt theo tab đang mở và tô đúng màu nút của từng theme; áp cho cả tab con của IN ĐƠN.
+- Giao diện: bộ icon mới, nét và đồng đều ở mọi tỉ lệ màn hình.
+- Giao diện: hiển thị đúng khi màn hình đặt tỉ lệ 125%, 150%; căn lại khoảng cách và cỡ chữ trên tất cả các tab.
+- Giao diện: chuyển tab chính và tab con IN ĐƠN nhanh hơn, bảng dữ liệu vẽ lại nhẹ hơn.
+- Giao diện: theme Dark có thanh cuộn tối, ô ngày giờ và góc nút không còn lệch màu; nhãn trạng thái mạng ở theme Red đọc được rõ.
+- Hộp &quot;Đóng ứng dụng&quot;: câu hỏi căn giữa, chữ đậm, nút lớn hơn; &quot;Hủy bỏ&quot; nằm góc trái để khó bấm nhầm &quot;Thoát ngay&quot;.
+- IN ĐƠN — In lại đơn: Vùng 4 lấy số lần in và thời gian in thật từ JMS thay vì điền sẵn.
+- IN ĐƠN: Enter ở ô mã vận đơn chạy đúng theo tab con đang mở — tab &quot;In lại đơn&quot; không còn in thẳng rồi xoá mã.
+- IN ĐƠN: in lô nhiều đơn đủ nhãn — nhãn nào JMS trả thiếu, app tự lấy bù, không ghép nhầm nhãn sang đơn khác.
+- IN ĐƠN: lô trên 10 đơn khoá các ô sửa Người nhận / Ghi chú, tránh ghi cùng một nội dung lên mọi nhãn.
+- Bản quyền: tắt máy đột ngột không còn làm hỏng file license — app không đòi kích hoạt lại khi license còn hạn.
+- Sửa lỗi app có thể treo lúc khởi động khi đang hiện thông báo cập nhật.
 
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
