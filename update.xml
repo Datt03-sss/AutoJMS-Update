@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-01T22:17:06+07:00</updatedAt>
+  <updatedAt>2026-10-02T12:53:27+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -30,30 +30,21 @@
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.13-beta.2</velopackVersion>
-      <displayVersion>1.26.13 beta 2</displayVersion>
-      <internalBuild>20261001.beta.2</internalBuild>
-      <releaseTag>v1.26.13-beta.2-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.2-Release/AutoJMS-Installer-1.26.13-beta.2.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.2-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.13-beta.3</velopackVersion>
+      <displayVersion>1.26.13 beta 3</displayVersion>
+      <internalBuild>20261002.beta.3</internalBuild>
+      <releaseTag>v1.26.13-beta.3-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.3-Release/AutoJMS-Installer-1.26.13-beta.3.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.3-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- Giao diện: làm mới toàn bộ HOME, ĐKCH, TRA HÀNH TRÌNH, IN ĐƠN và ABOUT theo bộ thiết kế mới; ba theme Light / Red / Dark đồng bộ màu trên mọi tab.
-- Giao diện: thanh tiêu đề mới theo theme, có nhãn trạng thái mạng; cửa sổ luôn phóng to mà không che thanh taskbar.
-- Giao diện: thanh tab mới nằm bên trái, ô chọn trượt theo tab đang mở và tô đúng màu nút của từng theme; áp cho cả tab con của IN ĐƠN.
-- Giao diện: bộ icon mới, nét và đồng đều ở mọi tỉ lệ màn hình.
-- Giao diện: hiển thị đúng khi màn hình đặt tỉ lệ 125%, 150%; căn lại khoảng cách và cỡ chữ trên tất cả các tab.
-- Giao diện: chuyển tab chính và tab con IN ĐƠN nhanh hơn, bảng dữ liệu vẽ lại nhẹ hơn.
-- Giao diện: theme Dark có thanh cuộn tối, ô ngày giờ và góc nút không còn lệch màu; nhãn trạng thái mạng ở theme Red đọc được rõ.
-- Hộp &quot;Đóng ứng dụng&quot;: câu hỏi căn giữa, chữ đậm, nút lớn hơn; &quot;Hủy bỏ&quot; nằm góc trái để khó bấm nhầm &quot;Thoát ngay&quot;.
-- IN ĐƠN — In lại đơn: Vùng 4 lấy số lần in và thời gian in thật từ JMS thay vì điền sẵn.
-- IN ĐƠN: Enter ở ô mã vận đơn chạy đúng theo tab con đang mở — tab &quot;In lại đơn&quot; không còn in thẳng rồi xoá mã.
-- IN ĐƠN: in lô nhiều đơn đủ nhãn — nhãn nào JMS trả thiếu, app tự lấy bù, không ghép nhầm nhãn sang đơn khác.
-- IN ĐƠN: lô trên 10 đơn khoá các ô sửa Người nhận / Ghi chú, tránh ghi cùng một nội dung lên mọi nhãn.
-- Bản quyền: tắt máy đột ngột không còn làm hỏng file license — app không đòi kích hoạt lại khi license còn hạn.
-- Sửa lỗi app có thể treo lúc khởi động khi đang hiện thông báo cập nhật.
+- ĐKCH: chọn đúng loại đơn kể cả khi JMS đổi tên nút hoặc lựa chọn (ví dụ &quot;Chuyển hoàn&quot; nay hiện là &quot;Trả lại&quot;); cấu hình ĐKCH tự cập nhật từ máy chủ mỗi 30 phút.
+- TRA HÀNH TRÌNH: thanh tiến trình trở lại vị trí và kích thước như trước, không còn kéo dài hết bề ngang.
+- Hộp thoại (&quot;Đóng ứng dụng&quot;, thông báo, nhập liệu…) giữ đúng bề rộng khi Windows phóng to giao diện từ 125% trở lên, nút và chữ không còn bị bóp.
+- Chữ có dấu không còn bị ngắt xuống dòng giữa chữ (ví dụ &quot;mạ / ng&quot;) trong hộp thoại và thanh gợi ý ĐKCH.
+- Bảng điều phối — Thời hiệu: các nút trên thanh công cụ đồng bộ kiểu dáng với phần còn lại của app.
 
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
