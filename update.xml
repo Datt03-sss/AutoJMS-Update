@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-02T12:53:27+07:00</updatedAt>
+  <updatedAt>2026-10-08T09:13:59+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -30,21 +30,21 @@
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.13-beta.3</velopackVersion>
-      <displayVersion>1.26.13 beta 3</displayVersion>
-      <internalBuild>20261002.beta.3</internalBuild>
-      <releaseTag>v1.26.13-beta.3-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.3-Release/AutoJMS-Installer-1.26.13-beta.3.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.3-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.13-beta.4</velopackVersion>
+      <displayVersion>1.26.13 beta 4</displayVersion>
+      <internalBuild>20261008.beta.4</internalBuild>
+      <releaseTag>v1.26.13-beta.4-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.4-Release/AutoJMS-Installer-1.26.13-beta.4.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-beta.4-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- ĐKCH: chọn đúng loại đơn kể cả khi JMS đổi tên nút hoặc lựa chọn (ví dụ &quot;Chuyển hoàn&quot; nay hiện là &quot;Trả lại&quot;); cấu hình ĐKCH tự cập nhật từ máy chủ mỗi 30 phút.
-- TRA HÀNH TRÌNH: thanh tiến trình trở lại vị trí và kích thước như trước, không còn kéo dài hết bề ngang.
-- Hộp thoại (&quot;Đóng ứng dụng&quot;, thông báo, nhập liệu…) giữ đúng bề rộng khi Windows phóng to giao diện từ 125% trở lên, nút và chữ không còn bị bóp.
-- Chữ có dấu không còn bị ngắt xuống dòng giữa chữ (ví dụ &quot;mạ / ng&quot;) trong hộp thoại và thanh gợi ý ĐKCH.
-- Bảng điều phối — Thời hiệu: các nút trên thanh công cụ đồng bộ kiểu dáng với phần còn lại của app.
+- Bảng điều phối: tab &quot;Thời hiệu&quot; đổi thành &quot;Báo Cáo&quot; gồm ba tab con &quot;Thời hiệu&quot;, &quot;QR&quot;, &quot;Thời hiệu ca 1&quot; dùng chung thanh nút Nhập file / Xuất ảnh / Mở thư mục; tab con đang chọn có viền đỏ.
+- Báo Cáo — Thời hiệu: bảng dựng lại đúng như file Excel mẫu (lưới kiểu Excel, tô màu tỷ lệ có điều kiện); nút &quot;Nhập file&quot; đọc dữ liệu thật từ file &quot;Ký nhận thực tế (T-1)&quot; hoặc &quot;Ký nhận trong ngày&quot; của JMS, chưa nhận ra loại file thì hỏi chọn cột; kéo thả file .xlsx vào bảng để nhập; gộp tên viết ở hai dạng Unicode, số mẫu về 0 trước khi nhập, cột tỷ lệ không còn lỗi chia 0; chú thích dưới bảng không còn lệch chỗ sau khi nhập file.
+- Báo Cáo — QR: tab con mới hiện bảng Báo cáo bưu cục của file QR COD Bưu cục; nhập hoặc kéo thả 1–2 file &quot;Quản lý thu tiền&quot; và &quot;Tra cứu QR&quot;, tự nhận diện theo dòng tiêu đề; cột Tên và Mã nhân viên giãn theo nội dung dài nhất; tiêu đề dòng 3 không còn lệch hay cắt chữ khi xuống dòng.
+- Báo Cáo — Thời hiệu ca 1: tab con mới, nhập hoặc kéo thả 1–5 file JMS (Ký nhận trong ngày, 2 file Kiểm kho, GS thao tác BCP, Tổng hợp hàng phát), hiện &quot;Đã nhập: n/5&quot; và đánh dấu đỏ nhạt sheet còn thiếu; hiển thị đủ 5 sheet như file Excel, mở sẵn sheet SHIPPER; chưa nhập file vẫn hiện đủ 38 hàng đánh số, số thứ tự canh giữa; ẩn khối &quot;Chú ý&quot;; xuất ảnh đúng vùng bảng (cột A tới S).
+- Bảng điều phối: theme Dark áp cho cả nội dung Dashboard, Thời hiệu, CHATBOT thay vì chỉ khung; cửa sổ không còn luôn đè lên cửa sổ chính, thu nhỏ / Alt+Tab riêng; không còn lỗi &quot;no such column: seq&quot; khi mở hành trình đơn.
 
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
