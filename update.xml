@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-08T09:13:59+07:00</updatedAt>
+  <updatedAt>2026-10-08T09:39:04+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
+    <channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.13</velopackVersion>
       <displayVersion>1.26.13</displayVersion>
-      <internalBuild>20260920.1</internalBuild>
+      <internalBuild>20261008.1</internalBuild>
       <releaseTag>v1.26.13-Release</releaseTag>
       <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-Release/AutoJMS-Installer-1.26.13.exe</setupUrl>
       <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.13-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
@@ -14,14 +14,37 @@
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- IN ĐƠN — "In Reverse": tab con mới, tìm đơn theo mã vận đơn và xem trước rồi mới in.
+- Giao diện: làm mới toàn bộ HOME, ĐKCH, TRA HÀNH TRÌNH, IN ĐƠN và ABOUT theo bộ thiết kế mới; ba theme Light / Red / Dark đồng bộ màu trên mọi tab.
+- Giao diện: thanh tiêu đề mới theo theme, có nhãn trạng thái mạng; cửa sổ luôn phóng to mà không che thanh taskbar.
+- Giao diện: thanh tab mới nằm bên trái, ô chọn trượt theo tab đang mở và tô đúng màu nút của từng theme; áp cho cả tab con của IN ĐƠN.
+- Giao diện: bộ icon mới, nét và đồng đều ở mọi tỉ lệ màn hình.
+- Giao diện: hiển thị đúng khi màn hình đặt tỉ lệ 125%, 150%; căn lại khoảng cách và cỡ chữ trên tất cả các tab.
+- Giao diện: chuyển tab chính và tab con IN ĐƠN nhanh hơn, bảng dữ liệu vẽ lại nhẹ hơn.
+- Giao diện: theme Dark có thanh cuộn tối, ô ngày giờ và góc nút không còn lệch màu; nhãn trạng thái mạng ở theme Red đọc được rõ.
+- Hộp &quot;Đóng ứng dụng&quot;: câu hỏi căn giữa, chữ đậm, nút lớn hơn; &quot;Hủy bỏ&quot; nằm góc trái để khó bấm nhầm &quot;Thoát ngay&quot;.
+- Hộp thoại (&quot;Đóng ứng dụng&quot;, thông báo, nhập liệu…) giữ đúng bề rộng khi Windows phóng to giao diện từ 125% trở lên, nút và chữ không còn bị bóp.
+- Chữ có dấu không còn bị ngắt xuống dòng giữa chữ (ví dụ &quot;mạ / ng&quot;) trong hộp thoại và thanh gợi ý ĐKCH.
+- IN ĐƠN — In lại đơn: Vùng 4 lấy số lần in và thời gian in thật từ JMS thay vì điền sẵn.
+- IN ĐƠN: Enter ở ô mã vận đơn chạy đúng theo tab con đang mở — tab &quot;In lại đơn&quot; không còn in thẳng rồi xoá mã.
+- IN ĐƠN: in lô nhiều đơn đủ nhãn — nhãn nào JMS trả thiếu, app tự lấy bù, không ghép nhầm nhãn sang đơn khác.
+- IN ĐƠN: lô trên 10 đơn khoá các ô sửa Người nhận / Ghi chú, tránh ghi cùng một nội dung lên mọi nhãn.
+- ĐKCH: chọn đúng loại đơn kể cả khi JMS đổi tên nút hoặc lựa chọn (ví dụ &quot;Chuyển hoàn&quot; nay hiện là &quot;Trả lại&quot;); cấu hình ĐKCH tự cập nhật từ máy chủ mỗi 30 phút.
+- TRA HÀNH TRÌNH: thanh tiến trình trở lại vị trí và kích thước như trước, không còn kéo dài hết bề ngang.
+- Bản quyền: tắt máy đột ngột không còn làm hỏng file license — app không đòi kích hoạt lại khi license còn hạn.
+- Sửa lỗi app có thể treo lúc khởi động khi đang hiện thông báo cập nhật.
+- Bảng điều phối: tab &quot;Thời hiệu&quot; đổi thành &quot;Báo Cáo&quot; gồm ba tab con &quot;Thời hiệu&quot;, &quot;QR&quot;, &quot;Thời hiệu ca 1&quot; dùng chung thanh nút Nhập file / Xuất ảnh / Mở thư mục; tab con đang chọn có viền đỏ.
+- Báo Cáo — Thời hiệu: bảng dựng lại đúng như file Excel mẫu (lưới kiểu Excel, tô màu tỷ lệ có điều kiện); nút &quot;Nhập file&quot; đọc dữ liệu thật từ file &quot;Ký nhận thực tế (T-1)&quot; hoặc &quot;Ký nhận trong ngày&quot; của JMS, chưa nhận ra loại file thì hỏi chọn cột; kéo thả file .xlsx vào bảng để nhập; gộp tên viết ở hai dạng Unicode, số mẫu về 0 trước khi nhập, cột tỷ lệ không còn lỗi chia 0; chú thích dưới bảng không còn lệch chỗ sau khi nhập file.
+- Báo Cáo — QR: tab con mới hiện bảng Báo cáo bưu cục của file QR COD Bưu cục; nhập hoặc kéo thả 1–2 file &quot;Quản lý thu tiền&quot; và &quot;Tra cứu QR&quot;, tự nhận diện theo dòng tiêu đề; cột Tên và Mã nhân viên giãn theo nội dung dài nhất; tiêu đề dòng 3 không còn lệch hay cắt chữ khi xuống dòng.
+- Báo Cáo — Thời hiệu ca 1: tab con mới, nhập hoặc kéo thả 1–5 file JMS (Ký nhận trong ngày, 2 file Kiểm kho, GS thao tác BCP, Tổng hợp hàng phát), hiện &quot;Đã nhập: n/5&quot; và đánh dấu đỏ nhạt sheet còn thiếu; hiển thị đủ 5 sheet như file Excel, mở sẵn sheet SHIPPER; chưa nhập file vẫn hiện đủ 38 hàng đánh số, số thứ tự canh giữa; ẩn khối &quot;Chú ý&quot;; xuất ảnh đúng vùng bảng (cột A tới S).
+- Bảng điều phối: theme Dark áp cho cả nội dung Dashboard, Thời hiệu, CHATBOT thay vì chỉ khung; cửa sổ không còn luôn đè lên cửa sổ chính, thu nhỏ / Alt+Tab riêng; không còn lỗi &quot;no such column: seq&quot; khi mở hành trình đơn.
+- IN ĐƠN — &quot;In Reverse&quot;: tab con mới, tìm đơn theo mã vận đơn và xem trước rồi mới in.
 - IN ĐƠN — In Reverse: tách chọn ngày và chọn giờ thành hai ô riêng, thu gọn sáu ô nhập vừa với nội dung.
-- IN ĐƠN — In Reverse: thêm bộ lọc "Dấu Reverse" và bộ lọc đơn chưa in, lưới hiện 20 dòng mỗi trang.
+- IN ĐƠN — In Reverse: thêm bộ lọc &quot;Dấu Reverse&quot; và bộ lọc đơn chưa in, lưới hiện 20 dòng mỗi trang.
 - IN ĐƠN — In Reverse: lọc theo tên nhân viên kèm danh sách người đang làm, có nút X xoá nhanh ô tên.
 - IN ĐƠN — In Reverse: in không giới hạn số lần, sổ chỉ còn ghi lại lịch sử lượt in.
 - IN ĐƠN — In Reverse: sắp xếp theo thời gian gom mới nhất trước, giữ PDF thu hồi trong 10 ngày.
 - IN ĐƠN: giữ mã vận đơn khi chuyển tab con và tự tìm lại, điền sẵn mã tuyến và mã bưu cục khi in lại.
-- IN ĐƠN: báo đúng lỗi nghiệp vụ trả về từ JMS thay vì báo "không có đơn nào".
+- IN ĐƠN: báo đúng lỗi nghiệp vụ trả về từ JMS thay vì báo &quot;không có đơn nào&quot;.
 - Mã bưu cục: dữ liệu tách riêng theo từng mã bưu cục — đổi bưu cục là sang bộ dữ liệu riêng, database cũ được tự chuyển sang thư mục theo mã.
 - Mã bưu cục: tab Dashboard, Thời hiệu và Arrival lấy mã theo cấu hình, không còn mã cứng.
 - Cập nhật: nhận được lệnh cập nhật đồng loạt từ quản trị — chỉ một hộp thoại xin phép, hỏi trước khi khởi động lại nên app không tự tắt giữa lúc đang làm.
@@ -29,7 +52,7 @@
 - Giao diện: Dashboard không còn trượt ngang lộ nền trắng khi kéo qua.
       </releaseNotes>
     </channel>
-    <channel name="beta" enabled="true" prerelease="true">
+<channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.13-beta.4</velopackVersion>
       <displayVersion>1.26.13 beta 4</displayVersion>
       <internalBuild>20261008.beta.4</internalBuild>
@@ -40,11 +63,11 @@
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- Bảng điều phối: tab &quot;Thời hiệu&quot; đổi thành &quot;Báo Cáo&quot; gồm ba tab con &quot;Thời hiệu&quot;, &quot;QR&quot;, &quot;Thời hiệu ca 1&quot; dùng chung thanh nút Nhập file / Xuất ảnh / Mở thư mục; tab con đang chọn có viền đỏ.
-- Báo Cáo — Thời hiệu: bảng dựng lại đúng như file Excel mẫu (lưới kiểu Excel, tô màu tỷ lệ có điều kiện); nút &quot;Nhập file&quot; đọc dữ liệu thật từ file &quot;Ký nhận thực tế (T-1)&quot; hoặc &quot;Ký nhận trong ngày&quot; của JMS, chưa nhận ra loại file thì hỏi chọn cột; kéo thả file .xlsx vào bảng để nhập; gộp tên viết ở hai dạng Unicode, số mẫu về 0 trước khi nhập, cột tỷ lệ không còn lỗi chia 0; chú thích dưới bảng không còn lệch chỗ sau khi nhập file.
-- Báo Cáo — QR: tab con mới hiện bảng Báo cáo bưu cục của file QR COD Bưu cục; nhập hoặc kéo thả 1–2 file &quot;Quản lý thu tiền&quot; và &quot;Tra cứu QR&quot;, tự nhận diện theo dòng tiêu đề; cột Tên và Mã nhân viên giãn theo nội dung dài nhất; tiêu đề dòng 3 không còn lệch hay cắt chữ khi xuống dòng.
-- Báo Cáo — Thời hiệu ca 1: tab con mới, nhập hoặc kéo thả 1–5 file JMS (Ký nhận trong ngày, 2 file Kiểm kho, GS thao tác BCP, Tổng hợp hàng phát), hiện &quot;Đã nhập: n/5&quot; và đánh dấu đỏ nhạt sheet còn thiếu; hiển thị đủ 5 sheet như file Excel, mở sẵn sheet SHIPPER; chưa nhập file vẫn hiện đủ 38 hàng đánh số, số thứ tự canh giữa; ẩn khối &quot;Chú ý&quot;; xuất ảnh đúng vùng bảng (cột A tới S).
-- Bảng điều phối: theme Dark áp cho cả nội dung Dashboard, Thời hiệu, CHATBOT thay vì chỉ khung; cửa sổ không còn luôn đè lên cửa sổ chính, thu nhỏ / Alt+Tab riêng; không còn lỗi &quot;no such column: seq&quot; khi mở hành trình đơn.
+- Bảng điều phối: tab "Thời hiệu" đổi thành "Báo Cáo" gồm ba tab con "Thời hiệu", "QR", "Thời hiệu ca 1" dùng chung thanh nút Nhập file / Xuất ảnh / Mở thư mục; tab con đang chọn có viền đỏ.
+- Báo Cáo — Thời hiệu: bảng dựng lại đúng như file Excel mẫu (lưới kiểu Excel, tô màu tỷ lệ có điều kiện); nút "Nhập file" đọc dữ liệu thật từ file "Ký nhận thực tế (T-1)" hoặc "Ký nhận trong ngày" của JMS, chưa nhận ra loại file thì hỏi chọn cột; kéo thả file .xlsx vào bảng để nhập; gộp tên viết ở hai dạng Unicode, số mẫu về 0 trước khi nhập, cột tỷ lệ không còn lỗi chia 0; chú thích dưới bảng không còn lệch chỗ sau khi nhập file.
+- Báo Cáo — QR: tab con mới hiện bảng Báo cáo bưu cục của file QR COD Bưu cục; nhập hoặc kéo thả 1–2 file "Quản lý thu tiền" và "Tra cứu QR", tự nhận diện theo dòng tiêu đề; cột Tên và Mã nhân viên giãn theo nội dung dài nhất; tiêu đề dòng 3 không còn lệch hay cắt chữ khi xuống dòng.
+- Báo Cáo — Thời hiệu ca 1: tab con mới, nhập hoặc kéo thả 1–5 file JMS (Ký nhận trong ngày, 2 file Kiểm kho, GS thao tác BCP, Tổng hợp hàng phát), hiện "Đã nhập: n/5" và đánh dấu đỏ nhạt sheet còn thiếu; hiển thị đủ 5 sheet như file Excel, mở sẵn sheet SHIPPER; chưa nhập file vẫn hiện đủ 38 hàng đánh số, số thứ tự canh giữa; ẩn khối "Chú ý"; xuất ảnh đúng vùng bảng (cột A tới S).
+- Bảng điều phối: theme Dark áp cho cả nội dung Dashboard, Thời hiệu, CHATBOT thay vì chỉ khung; cửa sổ không còn luôn đè lên cửa sổ chính, thu nhỏ / Alt+Tab riêng; không còn lỗi "no such column: seq" khi mở hành trình đơn.
 
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
