@@ -50,9 +50,12 @@
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-- TRA HÀNH TRÌNH — nút &quot;Export chia chức năng&quot;: xuất theo mẫu mới gồm 4 sheet PHÁT HÀNG / VẤN ĐỀ / 854 HOÀN CB / HOÀN PHÁT, mỗi đơn chỉ nằm ở một sheet. Đơn mã 854 vào 854 HOÀN CB với địa chỉ và tên người nhận lấy từ JMS; đơn có Dấu chuyển hoàn = Có lấy thêm địa chỉ hoàn và tên người nhận hoàn từ JMS: có địa chỉ hoàn và Mã đoạn 1 khác mã tỉnh bưu cục mình thì vào 854 HOÀN CB, không có địa chỉ hoàn thì vào HOÀN PHÁT; còn lại chia theo Mã đoạn 2 trùng mã bưu cục (PHÁT HÀNG) hay không (VẤN ĐỀ).
-- Cấu hình: mã tỉnh bưu cục (mặc định 330, là Mã đoạn 1 của bưu cục) nay nằm trong cấu hình và tự nhận từ license khi được đặt trên trang Admin.
-
+**TRA HÀNH TRÌNH**
+Chia rõ tại chức năng **&quot;PHÁT _ HOÀN&quot;**:
+-- **&quot;HÀNG PHÁT&quot;**
+-- **&quot;ĐƠN SAI BƯU CỤC&quot;**
+-- **&quot;ĐƠN HOÀN CB/ 854&quot;**
+-- **&quot;HOÀN PHÁT&quot;**
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
     </channel>
