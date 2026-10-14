@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-14T21:18:57+07:00</updatedAt>
+  <updatedAt>2026-10-14T22:02:04+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -40,12 +40,12 @@
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.14-beta.2</velopackVersion>
-      <displayVersion>1.26.14 beta 2</displayVersion>
-      <internalBuild>20261014.beta.2</internalBuild>
-      <releaseTag>v1.26.14-beta.2-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.2-Release/AutoJMS-Installer-1.26.14-beta.2.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.2-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.14-beta.3</velopackVersion>
+      <displayVersion>1.26.14 beta 3</displayVersion>
+      <internalBuild>20261014.beta.3</internalBuild>
+      <releaseTag>v1.26.14-beta.3-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.3-Release/AutoJMS-Installer-1.26.14-beta.3.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.3-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
@@ -59,6 +59,9 @@ Hẹn giờ tự tải file JMS và gửi ảnh báo cáo vào nhóm Lark:
 -- Ảnh xuất đặt tên HH-mm-ss__TÊN__dd-MM.png, tự copy vào bộ nhớ tạm, tự xóa ảnh cũ hơn 7 ngày.
 -- Dùng lại file vừa tải khi JMS từ chối tạo lại lệnh xuất trong 10 phút.
 **SỬA LỖI**
+-- Đồng bộ cấu hình: công tắc Leader không còn báo nhầm &quot;máy khác vừa gia hạn&quot; khi chính máy này vừa lấy được quyền.
+-- Đồng bộ cấu hình: file cấu hình cục bộ có mốc sai thì không đưa lên máy chủ, dòng trạng thái nhắc sửa trong Setting.
+-- Đồng bộ cấu hình: bản sao .bak bị khoá / chỉ đọc không còn chặn nhận cấu hình chung.
 -- Mọi file xuất / tải về lưu trong thư mục Downloads của ứng dụng, không hỏi nơi lưu nữa.
 -- Không còn mất đăng nhập JMS khi phiên vẫn hợp lệ.
 -- Thông báo cập nhật giữ đúng xuống dòng và chữ in đậm.
