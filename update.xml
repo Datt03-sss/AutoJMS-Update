@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-14T22:02:04+07:00</updatedAt>
+  <updatedAt>2026-10-15T15:47:58+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -40,12 +40,12 @@
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.14-beta.3</velopackVersion>
-      <displayVersion>1.26.14 beta 3</displayVersion>
-      <internalBuild>20261014.beta.3</internalBuild>
-      <releaseTag>v1.26.14-beta.3-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.3-Release/AutoJMS-Installer-1.26.14-beta.3.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.3-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.14-beta.4</velopackVersion>
+      <displayVersion>1.26.14 beta 4</displayVersion>
+      <internalBuild>20261015.beta.4</internalBuild>
+      <releaseTag>v1.26.14-beta.4-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.4-Release/AutoJMS-Installer-1.26.14-beta.4.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.4-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
@@ -56,9 +56,16 @@ Hẹn giờ tự tải file JMS và gửi ảnh báo cáo vào nhóm Lark:
 -- **&quot;Đăng nhập Lark&quot;** ngay cạnh Setting, cửa sổ báo đã đăng nhập và tự đóng sau 30 giây.
 -- **&quot;Đồng bộ cấu hình&quot;**: các máy cùng bưu cục dùng chung Setting; chỉ máy **&quot;Leader&quot;** tải và gửi, máy **&quot;Non-L&quot;** chỉ xem. Bật Leader trong Setting (cần đã đăng nhập Lark).
 -- **&quot;Thời hiệu&quot;** chia Hôm trước / Hôm nay, thêm báo cáo Thời hiệu ca 1 và Thời hiệu + QR.
+-- Lịch hẹn chạy ngay từ lúc mở ứng dụng, không cần mở cửa sổ FullStack.
+-- Dòng trạng thái gửi / lỗi trên thanh nút tự xoá sau 10 giây.
+-- Nút Đăng nhập Lark và Setting dời ra mép phải; Thêm mới / Xóa ở góc trái dưới hộp Setting, xa Thoát / Lưu để không bấm nhầm.
 -- Ảnh xuất đặt tên HH-mm-ss__TÊN__dd-MM.png, tự copy vào bộ nhớ tạm, tự xóa ảnh cũ hơn 7 ngày.
 -- Dùng lại file vừa tải khi JMS từ chối tạo lại lệnh xuất trong 10 phút.
+**ĐỒNG BỘ DỮ LIỆU FULLSTACK**
+-- Tự đồng bộ ngay khi mở ứng dụng nếu đã đăng nhập JMS; chưa đăng nhập thì tự nhận ra sau khi đăng nhập (tối đa 1 phút), không cần gõ DASH.
 **SỬA LỖI**
+-- Báo cáo: chỉ báo &quot;đã gửi&quot; khi Lark xác nhận đã nhận tin, không còn báo nhầm khi gửi thất bại.
+-- Báo cáo: dòng trạng thái chỉ hiện &quot;Leader&quot; một lần.
 -- Đồng bộ cấu hình: công tắc Leader không còn báo nhầm &quot;máy khác vừa gia hạn&quot; khi chính máy này vừa lấy được quyền.
 -- Đồng bộ cấu hình: file cấu hình cục bộ có mốc sai thì không đưa lên máy chủ, dòng trạng thái nhắc sửa trong Setting.
 -- Đồng bộ cấu hình: bản sao .bak bị khoá / chỉ đọc không còn chặn nhận cấu hình chung.
