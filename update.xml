@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-15T15:47:58+07:00</updatedAt>
+  <updatedAt>2026-10-24T23:26:48+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -40,38 +40,32 @@
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.14-beta.4</velopackVersion>
-      <displayVersion>1.26.14 beta 4</displayVersion>
-      <internalBuild>20261015.beta.4</internalBuild>
-      <releaseTag>v1.26.14-beta.4-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.4-Release/AutoJMS-Installer-1.26.14-beta.4.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.4-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.14-beta.5</velopackVersion>
+      <displayVersion>1.26.14 beta 5</displayVersion>
+      <internalBuild>20261024.beta.5</internalBuild>
+      <releaseTag>v1.26.14-beta.5-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.5-Release/AutoJMS-Installer-1.26.14-beta.5.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.14-beta.5-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-**BÁO CÁO** (mới)
-Hẹn giờ tự tải file JMS và gửi ảnh báo cáo vào nhóm Lark:
--- **&quot;Setting&quot;**: mốc hẹn giờ, nhóm Lark (chọn trong các nhóm đã ghim), bật/tắt từng mốc, Người phụ trách (SPV), Thêm mới / Xóa.
--- **&quot;Đăng nhập Lark&quot;** ngay cạnh Setting, cửa sổ báo đã đăng nhập và tự đóng sau 30 giây.
--- **&quot;Đồng bộ cấu hình&quot;**: các máy cùng bưu cục dùng chung Setting; chỉ máy **&quot;Leader&quot;** tải và gửi, máy **&quot;Non-L&quot;** chỉ xem. Bật Leader trong Setting (cần đã đăng nhập Lark).
--- **&quot;Thời hiệu&quot;** chia Hôm trước / Hôm nay, thêm báo cáo Thời hiệu ca 1 và Thời hiệu + QR.
--- Lịch hẹn chạy ngay từ lúc mở ứng dụng, không cần mở cửa sổ FullStack.
--- Dòng trạng thái gửi / lỗi trên thanh nút tự xoá sau 10 giây.
--- Nút Đăng nhập Lark và Setting dời ra mép phải; Thêm mới / Xóa ở góc trái dưới hộp Setting, xa Thoát / Lưu để không bấm nhầm.
--- Ảnh xuất đặt tên HH-mm-ss__TÊN__dd-MM.png, tự copy vào bộ nhớ tạm, tự xóa ảnh cũ hơn 7 ngày.
--- Dùng lại file vừa tải khi JMS từ chối tạo lại lệnh xuất trong 10 phút.
-**ĐỒNG BỘ DỮ LIỆU FULLSTACK**
--- Tự đồng bộ ngay khi mở ứng dụng nếu đã đăng nhập JMS; chưa đăng nhập thì tự nhận ra sau khi đăng nhập (tối đa 1 phút), không cần gõ DASH.
-**SỬA LỖI**
--- Báo cáo: chỉ báo &quot;đã gửi&quot; khi Lark xác nhận đã nhận tin, không còn báo nhầm khi gửi thất bại.
--- Báo cáo: dòng trạng thái chỉ hiện &quot;Leader&quot; một lần.
--- Đồng bộ cấu hình: công tắc Leader không còn báo nhầm &quot;máy khác vừa gia hạn&quot; khi chính máy này vừa lấy được quyền.
--- Đồng bộ cấu hình: file cấu hình cục bộ có mốc sai thì không đưa lên máy chủ, dòng trạng thái nhắc sửa trong Setting.
--- Đồng bộ cấu hình: bản sao .bak bị khoá / chỉ đọc không còn chặn nhận cấu hình chung.
--- Mọi file xuất / tải về lưu trong thư mục Downloads của ứng dụng, không hỏi nơi lưu nữa.
--- Không còn mất đăng nhập JMS khi phiên vẫn hợp lệ.
--- Thông báo cập nhật giữ đúng xuống dòng và chữ in đậm.
+**KPI** (mới)
+Tab KPI riêng trong cửa sổ FullStack, cạnh Dashboard / Báo Cáo / Chatbot:
+-- Bảng KPI vận hành theo tháng, 8 hạng mục; Ký nhận (T-1, trong ngày), Thanh toán QR và Đơn SLA+6 tự lấy từ báo cáo đã tải, các mục còn lại nhập tay.
+-- Nút Sửa / Lưu / Huỷ, chọn tháng để xem lại; đang tải thì ẩn Sửa để không mất số đang gõ.
+-- Số KPI đồng bộ qua máy chủ cho các máy cùng bưu cục; bản cục bộ lưu trong kpi.json, tự gọn khi vượt trần.
+-- Tự tính điểm KPI tháng theo bảng luật điểm.
+**BÁO CÁO**
+-- Báo cáo COD mới: gửi gộp Thời hiệu + QR + COD trong một lượt; ảnh COD canh giữa từng ô, đủ viền ngoài.
+-- Tự đăng nhập lại JMS khi phiên hết hạn lúc tải báo cáo, qua plug-in AutoJMSLogin (vẫn nhận plug-in AutoJMS-atomic cũ); mã xác minh JMS lấy từ Lark Mail, chỉ nhận mã gắn với đúng yêu cầu vừa gửi.
+-- Tắt cửa sổ đăng nhập thì vẫn giữ thông báo hết phiên; chỉ tính thời gian chờ lại khi trang đăng nhập đã mở.
+-- Quá mốc hẹn 15 phút chưa gửi thì chạy bù và hiện hộp &quot;Bỏ lỡ báo cáo&quot;; Giờ gửi tự điền.
+-- Gửi xong một nhóm thì quét lịch ngay, mốc gần đó chạy tiếp không chờ 30 giây.
+-- Hộp &quot;Đã biết&quot; nổi trên cùng sau khi Lark xác nhận đã gửi, không chặn thao tác, gộp các lượt gửi trong 10 phút.
+-- Hộp Setting giữ một trang Lark mở suốt phiên, đọc Tên nhóm không tải lại trang, mở nhanh hơn.
+**ABOUT**
+-- Tuỳ chọn &quot;Khởi động cùng Windows&quot;, không cần quyền quản trị.
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
     </channel>
