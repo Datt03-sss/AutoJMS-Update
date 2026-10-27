@@ -1,62 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-27T23:29:57+07:00</updatedAt>
+  <updatedAt>2026-10-27T23:32:28+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
-<channel name="stable" enabled="true" prerelease="false">
+    <channel name="stable" enabled="true" prerelease="false">
       <velopackVersion>1.26.15</velopackVersion>
       <displayVersion>1.26.15</displayVersion>
       <internalBuild>20261027.1</internalBuild>
       <releaseTag>v1.26.15-Release</releaseTag>
       <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.15-Release/AutoJMS-Installer-1.26.15.exe</setupUrl>
       <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.15-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
-      <releaseNotesUrl></releaseNotesUrl>
-      <mandatory>false</mandatory>
-      <manualOnly>true</manualOnly>
-      <releaseNotes>
-**BÁO CÁO** (mới)
-Hẹn giờ tự tải file JMS và gửi ảnh báo cáo vào nhóm Lark:
--- **"Setting"**: mốc hẹn giờ, nhóm Lark (chọn trong các nhóm đã ghim), bật/tắt từng mốc, Người phụ trách (SPV), Thêm mới / Xóa.
--- **"Đăng nhập Lark"** ngay cạnh Setting, cửa sổ báo đã đăng nhập và tự đóng sau 30 giây.
--- **"Đồng bộ cấu hình"**: các máy cùng bưu cục dùng chung Setting; chỉ máy **"Leader"** tải và gửi, máy **"Non-L"** chỉ xem. Bật Leader trong Setting (cần đã đăng nhập Lark).
--- **"Thời hiệu"** chia Hôm trước / Hôm nay; thêm báo cáo Thời hiệu ca 1 và Thời hiệu + QR + COD (gửi gộp trong một lượt).
--- Lịch hẹn chạy ngay từ lúc mở ứng dụng, không cần mở cửa sổ FullStack.
--- Quá mốc hẹn 15 phút chưa gửi thì chạy bù và hiện hộp "Bỏ lỡ báo cáo"; gửi xong một nhóm thì mốc gần đó chạy tiếp ngay.
--- Chỉ báo "đã gửi" khi Lark xác nhận đã nhận tin; hộp "Đã biết" nổi trên cùng, không chặn thao tác, gộp các lượt gửi trong 10 phút.
--- Ảnh xuất đặt tên HH-mm-ss__TÊN__dd-MM.png, tự copy vào bộ nhớ tạm, tự xóa ảnh cũ hơn 7 ngày.
--- Dùng lại file vừa tải khi JMS từ chối tạo lại lệnh xuất trong 10 phút.
-**KPI** (mới)
-Tab KPI trong cửa sổ FullStack, cạnh Dashboard / Báo Cáo / Chatbot:
--- Bảng KPI vận hành theo tháng, 8 hạng mục; Ký nhận (T-1, trong ngày), Thanh toán QR và Đơn SLA+6 tự lấy từ báo cáo đã tải, các mục còn lại nhập tay; tự tính điểm và thưởng.
--- Nút Sửa / Lưu / Huỷ, chọn tháng để xem lại; số KPI đồng bộ cho các máy cùng bưu cục.
-**TỰ ĐĂNG NHẬP JMS** (máy ULTRA, cần plug-in AutoJMSLogin)
--- ABOUT → **"Quản lý plug-in"**: cài / cập nhật / gỡ plug-in từ GitHub hoặc từ file zip.
--- Hết phiên JMS (lúc mở ứng dụng hoặc lúc tải báo cáo) thì plug-in tự đăng nhập, mã xác minh lấy từ Lark Mail; bấm **F2** để chạy tay.
--- Lark chưa đăng nhập thì hiện cửa sổ mã QR đăng nhập Lark, quét xong đăng nhập JMS tiếp, không dừng báo lỗi.
--- Máy khác dùng cùng tài khoản JMS với máy Leader thì nhường Leader, không đá phiên của Leader.
-**TRA HÀNH TRÌNH**
-Chia rõ tại chức năng **"PHÁT _ HOÀN"**:
--- **"HÀNG PHÁT"**
--- **"ĐƠN SAI BƯU CỤC"**
--- **"ĐƠN HOÀN CB/ 854"**
--- **"HOÀN PHÁT"**
-**ĐỒNG BỘ DỮ LIỆU FULLSTACK**
--- Tự đồng bộ ngay khi mở ứng dụng nếu đã đăng nhập JMS; chưa đăng nhập thì tự nhận ra sau khi đăng nhập (tối đa 1 phút), không cần gõ DASH.
-**ABOUT**
--- Tuỳ chọn **"Khởi động cùng Windows"**, không cần quyền quản trị.
-**SỬA LỖI**
--- Mọi file xuất / tải về lưu trong thư mục Downloads của ứng dụng, không hỏi nơi lưu nữa.
--- Không còn mất đăng nhập JMS khi phiên vẫn hợp lệ.
--- Thông báo cập nhật giữ đúng xuống dòng và chữ in đậm.
-      </releaseNotes>
-    </channel>
-    <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.15-beta.1</velopackVersion>
-      <displayVersion>1.26.15 beta 1</displayVersion>
-      <internalBuild>20261027.beta.1</internalBuild>
-      <releaseTag>v1.26.15-beta.1-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.15-beta.1-Release/AutoJMS-Installer-1.26.15-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.15-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
@@ -92,6 +45,54 @@ Chia rõ tại chức năng **&quot;PHÁT _ HOÀN&quot;**:
 -- Tự đồng bộ ngay khi mở ứng dụng nếu đã đăng nhập JMS; chưa đăng nhập thì tự nhận ra sau khi đăng nhập (tối đa 1 phút), không cần gõ DASH.
 **ABOUT**
 -- Tuỳ chọn **&quot;Khởi động cùng Windows&quot;**, không cần quyền quản trị.
+**SỬA LỖI**
+-- Mọi file xuất / tải về lưu trong thư mục Downloads của ứng dụng, không hỏi nơi lưu nữa.
+-- Không còn mất đăng nhập JMS khi phiên vẫn hợp lệ.
+-- Thông báo cập nhật giữ đúng xuống dòng và chữ in đậm.
+      </releaseNotes>
+    </channel>
+<channel name="beta" enabled="true" prerelease="true">
+      <velopackVersion>1.26.15-beta.1</velopackVersion>
+      <displayVersion>1.26.15 beta 1</displayVersion>
+      <internalBuild>20261027.beta.1</internalBuild>
+      <releaseTag>v1.26.15-beta.1-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.15-beta.1-Release/AutoJMS-Installer-1.26.15-beta.1.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.15-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <releaseNotesUrl></releaseNotesUrl>
+      <mandatory>false</mandatory>
+      <manualOnly>true</manualOnly>
+      <releaseNotes>
+**BÁO CÁO** (mới)
+Hẹn giờ tự tải file JMS và gửi ảnh báo cáo vào nhóm Lark:
+-- **"Setting"**: mốc hẹn giờ, nhóm Lark (chọn trong các nhóm đã ghim), bật/tắt từng mốc, Người phụ trách (SPV), Thêm mới / Xóa.
+-- **"Đăng nhập Lark"** ngay cạnh Setting, cửa sổ báo đã đăng nhập và tự đóng sau 30 giây.
+-- **"Đồng bộ cấu hình"**: các máy cùng bưu cục dùng chung Setting; chỉ máy **"Leader"** tải và gửi, máy **"Non-L"** chỉ xem. Bật Leader trong Setting (cần đã đăng nhập Lark).
+-- **"Thời hiệu"** chia Hôm trước / Hôm nay; thêm báo cáo Thời hiệu ca 1 và Thời hiệu + QR + COD (gửi gộp trong một lượt).
+-- Lịch hẹn chạy ngay từ lúc mở ứng dụng, không cần mở cửa sổ FullStack.
+-- Quá mốc hẹn 15 phút chưa gửi thì chạy bù và hiện hộp "Bỏ lỡ báo cáo"; gửi xong một nhóm thì mốc gần đó chạy tiếp ngay.
+-- Chỉ báo "đã gửi" khi Lark xác nhận đã nhận tin; hộp "Đã biết" nổi trên cùng, không chặn thao tác, gộp các lượt gửi trong 10 phút.
+-- Ảnh xuất đặt tên HH-mm-ss__TÊN__dd-MM.png, tự copy vào bộ nhớ tạm, tự xóa ảnh cũ hơn 7 ngày.
+-- Dùng lại file vừa tải khi JMS từ chối tạo lại lệnh xuất trong 10 phút.
+**KPI** (mới)
+Tab KPI trong cửa sổ FullStack, cạnh Dashboard / Báo Cáo / Chatbot:
+-- Bảng KPI vận hành theo tháng, 8 hạng mục; Ký nhận (T-1, trong ngày), Thanh toán QR và Đơn SLA+6 tự lấy từ báo cáo đã tải, các mục còn lại nhập tay; tự tính điểm và thưởng.
+-- Nút Sửa / Lưu / Huỷ, chọn tháng để xem lại; số KPI đồng bộ cho các máy cùng bưu cục.
+**TỰ ĐĂNG NHẬP JMS** (máy ULTRA, cần plug-in AutoJMSLogin)
+-- ABOUT → **"Quản lý plug-in"**: cài / cập nhật / gỡ plug-in từ GitHub hoặc từ file zip.
+-- Hết phiên JMS (lúc mở ứng dụng hoặc lúc tải báo cáo) thì plug-in tự đăng nhập, mã xác minh lấy từ Lark Mail; bấm **F2** để chạy tay.
+-- Lark chưa đăng nhập thì hiện cửa sổ mã QR đăng nhập Lark, quét xong đăng nhập JMS tiếp, không dừng báo lỗi.
+-- JMS tin thiết bị (vào thẳng trang chủ sau captcha) thì plug-in dừng ngay, không còn captcha mở mãi trên trang chủ.
+-- Máy khác dùng cùng tài khoản JMS với máy Leader thì nhường Leader, không đá phiên của Leader.
+**TRA HÀNH TRÌNH**
+Chia rõ tại chức năng **"PHÁT _ HOÀN"**:
+-- **"HÀNG PHÁT"**
+-- **"ĐƠN SAI BƯU CỤC"**
+-- **"ĐƠN HOÀN CB/ 854"**
+-- **"HOÀN PHÁT"**
+**ĐỒNG BỘ DỮ LIỆU FULLSTACK**
+-- Tự đồng bộ ngay khi mở ứng dụng nếu đã đăng nhập JMS; chưa đăng nhập thì tự nhận ra sau khi đăng nhập (tối đa 1 phút), không cần gõ DASH.
+**ABOUT**
+-- Tuỳ chọn **"Khởi động cùng Windows"**, không cần quyền quản trị.
 **SỬA LỖI**
 -- Mọi file xuất / tải về lưu trong thư mục Downloads của ứng dụng, không hỏi nơi lưu nữa.
 -- Không còn mất đăng nhập JMS khi phiên vẫn hợp lệ.
