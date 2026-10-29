@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-28T13:47:58+07:00</updatedAt>
+  <updatedAt>2026-10-29T09:22:43+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -52,16 +52,20 @@ Chia rõ tại chức năng **"PHÁT _ HOÀN"**:
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.16-beta.1</velopackVersion>
-      <displayVersion>1.26.16 beta 1</displayVersion>
-      <internalBuild>20261028.beta.1</internalBuild>
-      <releaseTag>v1.26.16-beta.1-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.1-Release/AutoJMS-Installer-1.26.16-beta.1.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.1-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.16-beta.2</velopackVersion>
+      <displayVersion>1.26.16 beta 2</displayVersion>
+      <internalBuild>20261029.beta.2</internalBuild>
+      <releaseTag>v1.26.16-beta.2-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.2-Release/AutoJMS-Installer-1.26.16-beta.2.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.2-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
+**THỜI HIỆU**
+-- Bảng **&quot;Ký nhận thời hiệu&quot;**: cột **&quot;Quét mã ở Bưu cục&quot;** hiện đúng mã bưu cục (VD 214A03), không còn bị đổi thành ngày 0214-03-01 trên máy để định dạng tiếng Anh.
+**CHATBOT**
+-- Nút **&quot;Mô phỏng quét phát&quot;**: kiểm tra đơn và xem trước gói dữ liệu &quot;Quét phát hàng&quot; như JMS, nhập tay hoặc từ file .xlsx/.csv/.txt có cột &quot;Mã vận đơn&quot; / &quot;Tên nhân viên&quot;. Chỉ mô phỏng, không gửi bản ghi quét lên JMS.
 **ABOUT**
 -- Hộp **&quot;Quản lý plug-in&quot;** gọn hơn: chỉ hiện **&quot;Phiên bản: x - mới nhất&quot;**, có bản mới trên GitHub thì hiện icon cập nhật thay chữ &quot;mới nhất&quot;; bỏ dòng chú thích nguồn GitHub, sửa lỗi dòng plug-in đè lên tiêu đề hộp.
 Bản beta, có thể chưa ổn định.
