@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-10-29T09:22:43+07:00</updatedAt>
+  <updatedAt>2026-10-30T14:51:39+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -54,7 +54,7 @@ Chia rõ tại chức năng **"PHÁT _ HOÀN"**:
     <channel name="beta" enabled="true" prerelease="true">
       <velopackVersion>1.26.16-beta.2</velopackVersion>
       <displayVersion>1.26.16 beta 2</displayVersion>
-      <internalBuild>20261029.beta.2</internalBuild>
+      <internalBuild>20261030.beta.2</internalBuild>
       <releaseTag>v1.26.16-beta.2-Release</releaseTag>
       <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.2-Release/AutoJMS-Installer-1.26.16-beta.2.exe</setupUrl>
       <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.2-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
@@ -68,6 +68,12 @@ Chia rõ tại chức năng **"PHÁT _ HOÀN"**:
 -- Nút **&quot;Mô phỏng quét phát&quot;**: kiểm tra đơn và xem trước gói dữ liệu &quot;Quét phát hàng&quot; như JMS, nhập tay hoặc từ file .xlsx/.csv/.txt có cột &quot;Mã vận đơn&quot; / &quot;Tên nhân viên&quot;. Chỉ mô phỏng, không gửi bản ghi quét lên JMS.
 **ABOUT**
 -- Hộp **&quot;Quản lý plug-in&quot;** gọn hơn: chỉ hiện **&quot;Phiên bản: x - mới nhất&quot;**, có bản mới trên GitHub thì hiện icon cập nhật thay chữ &quot;mới nhất&quot;; bỏ dòng chú thích nguồn GitHub, sửa lỗi dòng plug-in đè lên tiêu đề hộp.
+**DASHBOARD**
+-- Bảng **&quot;Danh sách đơn&quot;**: mỗi cột có nút lọc kiểu Excel (tick chọn giá trị, ô tìm, dán nhiều mã, &quot;Chọn tất cả&quot;, OK/Hủy) và sắp xếp tăng/giảm. Sắp xếp áp cho toàn bộ đơn của nhóm, &quot;Thời gian thao tác&quot; xếp đúng theo giờ, &quot;Tồn kho&quot; theo số ngày.
+-- Mỗi trang hiện tối đa **300 đơn**; nút **Copy** chép đủ toàn bộ mã đang lọc, đúng thứ tự đang xếp.
+-- Giao diện tự co gọn khi thu nhỏ cửa sổ.
+**BÁO CÁO**
+-- Bấm X tắt cửa sổ Dashboard lúc sắp tới giờ báo cáo thì cửa sổ chỉ ẩn, Lark vẫn chạy nền gửi báo cáo; đã tắt từ trước thì app tự mở lại ngầm trước giờ báo cáo 15 phút. Không còn lỡ báo cáo vì lỡ tay tắt Dashboard.
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
     </channel>
