@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-11-10T17:28:52+07:00</updatedAt>
+  <updatedAt>2026-11-13T20:10:59+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -52,44 +52,29 @@ Chia rõ tại chức năng **"PHÁT _ HOÀN"**:
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.16-beta.3</velopackVersion>
-      <displayVersion>1.26.16 beta 3</displayVersion>
-      <internalBuild>20261110.beta.3</internalBuild>
-      <releaseTag>v1.26.16-beta.3-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.3-Release/AutoJMS-Installer-1.26.16-beta.3.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.3-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.16-beta.4</velopackVersion>
+      <displayVersion>1.26.16 beta 4</displayVersion>
+      <internalBuild>20261113.beta.4</internalBuild>
+      <releaseTag>v1.26.16-beta.4-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.4-Release/AutoJMS-Installer-1.26.16-beta.4.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.4-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-**BÁO CÁO**
--- Tự đổ báo cáo: tải file từ JMS bị lỗi (mất phiên đăng nhập, mạng chậm) thì app tự thử lại mỗi 30 giây cho tới hết 15 phút sau giờ tải, không còn bỏ luôn mốc báo cáo. Lần thử lại chỉ tải những file còn thiếu.
--- Bảng **&quot;Thời hiệu ca 1&quot;** dùng lại được: nhận file &quot;GS thao tác BCP&quot; bản mới của JMS (cột đổi tên thành &quot;Mã đoạn 3&quot;).
--- Gửi Lark lỗi trước khi bấm Gửi (sai nhóm, không thấy ô soạn, quá 15 giây) thì lượt sau gửi lại, không mất mốc gửi.
--- Tự đăng nhập JMS ổn định hơn: không chạy khi Windows đang khoá, lấy mã OTP từ Lark Mail không còn kẹt khi trang Messenger treo.
+**GIAO DIỆN**
+-- Toàn app đổi sang font **Be Vietnam Pro** (gọn, rõ hơn), áp cho cả màn WinForms lẫn Dashboard web; app tự mang theo font nên máy không cần cài.
+-- Chữ tiêu đề các tab (HOME, CHUYỂN HOÀN, TRA HÀNH TRÌNH, IN ĐƠN...) dùng nét SemiBold cho đầy đặn, đều nét, hết mờ/răng cưa.
 **IN ĐƠN**
--- **In Chuyển Hoàn** in lại được sau khi JMS đổi cách in.
--- **In lại đơn** / **In Reverse**: bấm **Shift+Enter** để xuống dòng nhập nhiều mã, Enter vẫn tìm như cũ.
--- In tự động: tìm lỗi hoặc không có đơn được chọn thì giữ mã trên ô và báo &quot;Lỗi tìm kiếm&quot;, không in nhầm.
--- Tra duyệt in theo đúng bưu cục đang đăng nhập.
+-- **In lại đơn**: bấm con mắt để hiện số người nhận thì bản in không còn in số đầy đủ dạng chữ — số điện thoại thành **mã QR** đặt vào vùng Ghi chú (dòng SĐT trên tem vẫn che). Quét QR bằng camera điện thoại là hiện số kèm nút gọi; mỗi nhãn một mã riêng để không gọi nhầm người.
+**HÀNH TRÌNH**
+-- Nút **&quot;Tải lên&quot;** đổi thành **&quot;Phát lại&quot;**: xuất Excel theo mẫu phát lại, thêm cột Nhân viên đang phát hàng, Shipper phát hàng gần nhất, Số lần phát lại; xuất xong hỏi mở file như các bảng khác.
 **DASHBOARD**
--- Giao diện mới: hàng thẻ nhóm thu gọn/mở rộng được, nút ẩn/hiện thanh lọc, panel trái có **&quot;CẦN CHÚ Ý&quot;** (đơn tồn lâu) và **&quot;TUỔI TỒN&quot;**, tick chọn từng đơn + **&quot;Copy đã chọn&quot;**, gắn/bỏ sao hàng loạt, ô nhập số trang để nhảy trang.
--- Thẻ **Phát hàng** lấy số từ báo cáo JMS &quot;GS thao tác của BCP&quot;; **&quot;Chưa quét đến&quot;** bỏ đơn đã Ký nhận.
--- Thẻ **Chuyển hoàn**: Đợi xét duyệt / Đã phê duyệt / Phát lại khớp số với Tổng tồn, thêm cột **&quot;Thời gian ĐKCH&quot;** lọc theo ngày.
--- Số **Kiểm kho** / **CSKH** lấy từ hàng chờ JMS; tab Khiếu nại đọc khiếu nại của vận đơn từ JMS.
--- Mỗi trang **200 đơn** (trước là 300). Nút Copy ở màn Hành trình chỉ chép mã đang xem.
--- Sửa lỗi: &quot;Cập nhật sau&quot; chạy đúng chu kỳ đã chọn (trước bị đồng bộ mỗi 1 phút), tìm kiếm và lọc ngày, &quot;Xóa lọc&quot;, xuất dữ liệu đúng danh sách đang xem, số liệu không về 0 khi JMS lỗi, không còn hiện chữ &quot;empty&quot;.
--- Bỏ ô chọn nguồn ALL/LOCAL và cột &quot;Nhắc&quot;.
-**QUÉT PHÁT HÀNG**
--- Tab mới **&quot;Quét phát hàng&quot;** (hiện khi đã cài plug-in AutoJMS-Deli): gửi quét phát theo lô 100 đơn.
-**CHATBOT**
--- Tạm gỡ tab CHATBOT, sẽ quay lại dưới dạng plug-in.
-**ĐKCH**
--- Bấm Dừng lúc ĐKCH đang khởi động thì dừng hẳn (trước đây vẫn chạy ngầm).
-**BẢN QUYỀN / CẬP NHẬT**
--- Gia hạn +1 tháng tính đúng 1 tháng lịch, dùng tới 23:59:59 ngày hết hạn (bỏ 7 ngày ân hạn).
--- Mở app lúc mất mạng: có mạng lại thì app tự bật đủ dịch vụ, không cần mở lại.
--- Bản cập nhật nhỏ và module bắt buộc kiểm chữ ký trước khi cài; file cài đặt không còn hỏng khi tắt app đột ngột.
+-- Thẻ **&quot;Tất cả&quot;** lấp trọn vùng trái, các nhóm hàng chờ dời sang phải vạch chia panel cho gọn.
+-- Tạm gỡ tab **&quot;Quét phát hàng&quot;** khỏi màn Vận hành (sẽ quay lại dạng plug-in).
+**ĐỒNG BỘ NHIỀU MÁY**
+-- Tồn kho, ngày tồn, mốc &quot;kiến đến&quot; nay thống nhất giữa máy chủ và máy phụ: máy phụ đọc đúng số liệu máy đồng bộ đẩy lên, ngày giờ không còn lệch theo định dạng Windows.
+-- Thời hiệu đơn ký tính chính xác hơn: chỉ ghi nhận đơn ký **trong ngày**, đơn ký sớm/lệch ngày không tính vào bảng; thời gian quét lấy theo giờ thao tác thật.
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
     </channel>
