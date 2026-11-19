@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-11-13T20:10:59+07:00</updatedAt>
+  <updatedAt>2026-11-20T05:08:33+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -52,29 +52,36 @@ Chia rõ tại chức năng **"PHÁT _ HOÀN"**:
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.16-beta.4</velopackVersion>
-      <displayVersion>1.26.16 beta 4</displayVersion>
-      <internalBuild>20261113.beta.4</internalBuild>
-      <releaseTag>v1.26.16-beta.4-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.4-Release/AutoJMS-Installer-1.26.16-beta.4.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.4-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.16-beta.5</velopackVersion>
+      <displayVersion>1.26.16 beta 5</displayVersion>
+      <internalBuild>20261120.beta.5</internalBuild>
+      <releaseTag>v1.26.16-beta.5-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.5-Release/AutoJMS-Installer-1.26.16-beta.5.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.16-beta.5-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
-**GIAO DIỆN**
--- Toàn app đổi sang font **Be Vietnam Pro** (gọn, rõ hơn), áp cho cả màn WinForms lẫn Dashboard web; app tự mang theo font nên máy không cần cài.
--- Chữ tiêu đề các tab (HOME, CHUYỂN HOÀN, TRA HÀNH TRÌNH, IN ĐƠN...) dùng nét SemiBold cho đầy đặn, đều nét, hết mờ/răng cưa.
-**IN ĐƠN**
--- **In lại đơn**: bấm con mắt để hiện số người nhận thì bản in không còn in số đầy đủ dạng chữ — số điện thoại thành **mã QR** đặt vào vùng Ghi chú (dòng SĐT trên tem vẫn che). Quét QR bằng camera điện thoại là hiện số kèm nút gọi; mỗi nhãn một mã riêng để không gọi nhầm người.
-**HÀNH TRÌNH**
--- Nút **&quot;Tải lên&quot;** đổi thành **&quot;Phát lại&quot;**: xuất Excel theo mẫu phát lại, thêm cột Nhân viên đang phát hàng, Shipper phát hàng gần nhất, Số lần phát lại; xuất xong hỏi mở file như các bảng khác.
 **DASHBOARD**
--- Thẻ **&quot;Tất cả&quot;** lấp trọn vùng trái, các nhóm hàng chờ dời sang phải vạch chia panel cho gọn.
--- Tạm gỡ tab **&quot;Quét phát hàng&quot;** khỏi màn Vận hành (sẽ quay lại dạng plug-in).
-**ĐỒNG BỘ NHIỀU MÁY**
--- Tồn kho, ngày tồn, mốc &quot;kiến đến&quot; nay thống nhất giữa máy chủ và máy phụ: máy phụ đọc đúng số liệu máy đồng bộ đẩy lên, ngày giờ không còn lệch theo định dạng Windows.
--- Thời hiệu đơn ký tính chính xác hơn: chỉ ghi nhận đơn ký **trong ngày**, đơn ký sớm/lệch ngày không tính vào bảng; thời gian quét lấy theo giờ thao tác thật.
+-- Thẻ **&quot;Chuyển hoàn&quot;** đổi thành **&quot;Phát lại&quot;** và chia đơn theo hành trình: Đủ ca chưa ĐKCH, Phát lại trong ngày (lần 1, lần 2 → đã đủ ca / chưa đủ ca), Phát lại ngày mai, Đợi xét duyệt, Đã phê duyệt chưa in.
+-- Thêm chip **&quot;Chưa đủ ca (lần 1 + 2)&quot;** gộp đơn chưa đủ ca của cả hai lần phát lại, sao chép một lần là ra Quét phát thêm 1 ca.
+-- Hàng chip trình bày gọn hơn: nhãn &quot;Phát lại trong ngày ›&quot; mở đầu hàng, chip con hiện ngay sau chip đang chọn.
+**IN ĐƠN**
+-- **In lại đơn**: bấm con mắt thì bản in hiện lại số điện thoại đầy đủ, kèm mã QR để gọi nhanh.
+-- Đơn đầu 85/86 đã Ký nhận không còn tự gắn hậu tố -001 (JMS từ chối mã có hậu tố).
+**HÀNH TRÌNH**
+-- Xuất **Phát hoàn**: 4 tab sheet tô màu theo mẫu; sheet HOÀN PHÁT thêm cột &quot;Thao tác cuối cùng&quot;.
+-- Tải lại hành trình không còn chèn trùng sự kiện đã có; các dòng trùng cũ được dọn một lần.
+**BÁO CÁO TỰ ĐỘNG (LARK)**
+-- Đọc được bản xuất &quot;Quản lý thu tiền&quot; mới của JMS (cột &quot;Ngày nghiệp vụ&quot;): báo cáo QR và COD hẹn giờ gửi lại bình thường.
+-- Ngày không ai nợ COD vẫn gửi ảnh &quot;hoàn thành COD&quot; vào Lark.
+-- Tải file JMS lỗi hoặc chậm được thử lại tới hạn gửi (mỗi 2 phút); file JMS xuất 0 dòng được tải lại thay vì báo lỗi tới hết lượt.
+-- Báo cáo dựng ảnh lỗi hoặc Lark lỗi trước khi gửi được thử lại, không bị coi là đã gửi.
+-- Hộp chọn file tay khi JMS từ chối xuất lại không còn chặn hàng đợi tải.
+-- Thêm tab **&quot;Lịch sử&quot;** trong Báo cáo: mỗi lượt hẹn giờ trong ngày một dòng (đã gửi / chưa gửi kèm lý do / máy khác gửi), xem được 7 ngày gần nhất.
+**THÔNG BÁO LỖI**
+-- Thông báo lỗi trên toàn ứng dụng chuyển sang câu tiếng Việt ngắn, nói rõ nên làm gì tiếp (kiểm tra mạng, đăng nhập lại JMS, đóng file Excel đang mở...), không còn hiện mã lỗi hay nội dung kỹ thuật. Chi tiết vẫn được ghi đầy đủ vào nhật ký để hỗ trợ.
+-- Lỗi kích hoạt bản quyền hiện lý do rõ ràng (key không tồn tại, đã hết hạn, đang dùng trên máy khác...).
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
     </channel>
