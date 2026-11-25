@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-11-25T10:32:37+07:00</updatedAt>
+  <updatedAt>2026-11-25T15:12:03+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -70,28 +70,19 @@
       </releaseNotes>
     </channel>
     <channel name="beta" enabled="true" prerelease="true">
-      <velopackVersion>1.26.17-beta.2</velopackVersion>
-      <displayVersion>1.26.17 beta 2</displayVersion>
-      <internalBuild>20261125.beta.2</internalBuild>
-      <releaseTag>v1.26.17-beta.2-Release</releaseTag>
-      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.17-beta.2-Release/AutoJMS-Installer-1.26.17-beta.2.exe</setupUrl>
-      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.17-beta.2-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
+      <velopackVersion>1.26.17-beta.3</velopackVersion>
+      <displayVersion>1.26.17 beta 3</displayVersion>
+      <internalBuild>20261125.beta.3</internalBuild>
+      <releaseTag>v1.26.17-beta.3-Release</releaseTag>
+      <setupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.17-beta.3-Release/AutoJMS-Installer-1.26.17-beta.3.exe</setupUrl>
+      <velopackSetupUrl>https://github.com/Datt03-sss/AutoJMS-Update/releases/download/v1.26.17-beta.3-Release/AutoJMS-win-Setup.exe</velopackSetupUrl>
       <releaseNotesUrl></releaseNotesUrl>
       <mandatory>false</mandatory>
       <manualOnly>true</manualOnly>
       <releaseNotes>
 **DASHBOARD**
--- Thẻ **Phát hàng** theo báo cáo JMS &quot;GS thao tác của BCP (sót đến sót phát)&quot;: **&quot;Cần phát trong ngày&quot;** và **&quot;Đã phát&quot;** hiện số đơn, **&quot;Chưa phát&quot;** giữ danh sách mã.
--- **&quot;Chưa phát&quot;** chia 4 thẻ con theo mẫu xuất Phát hoàn: **Đơn chưa quét phát**, **Đơn vấn đề**, **Đơn hoàn Reverse + CB**, **Đơn hoàn chưa phát**; mỗi thẻ có cột hiển thị riêng. Đơn đã Quét phát / Ký nhận thật nhưng báo cáo JMS chưa kịp cập nhật được đối chiếu hành trình và bỏ ra; khi số lệch với JMS thì thẻ ghi kèm số của JMS.
--- Báo cáo phát / đến làm mới mỗi phút, chỉ vẽ lại khi số liệu đổi; thẻ &quot;Đơn chưa quét phát&quot; cập nhật liên tục tới khi về 0.
--- Nhịp cập nhật theo trạng thái đơn: chưa ĐKCH 30 phút, đã ĐKCH ngắn hơn, đang giao lại ngắn hơn nữa (không dưới 3 phút).
--- Nút **&quot;Làm mới&quot;** ở góc trên bên phải từng nhóm hàng chờ: chỉ làm mới nhóm đang xem, không đồng bộ toàn bộ.
--- **&quot;Phát lại ngày mai&quot;** chỉ gồm đơn 80/84 thao tác hôm nay và hẹn phát lại sau ngày thao tác; còn lại về &quot;Phát lại trong ngày&quot;.
--- Máy phụ (không giữ đồng bộ): **&quot;Last Update&quot;** hiện đúng giờ danh sách tồn mà máy chính vừa đẩy lên, không còn đứng ở giờ cũ sau khi bấm Đồng bộ.
-**SÓT LẠM SÓT LỌN**
--- Tab mới **&quot;Sót lạm sót lọn&quot;** cạnh tab KPI: bảng tiến độ điền đơn trên AutoJMS-Shot (đã có người nhận / chưa điền), **Xuất** Excel, **Cấu hình** liên kết Shot và quản lý nhân viên Shot (thêm, sửa, xoá, đặt lại mật khẩu, khoá/mở), đồng bộ **Mã đoạn 3** từ JMS.
-**TRA HÀNH TRÌNH**
--- Nút **&quot;Sót lạm sót lọn&quot;** sau nút &quot;Phát lại&quot;: xuất các đơn PHÁT HÀNG đã tra thành file 6 cột (Mã vận đơn, Mã đoạn 3, Địa chỉ, Người nhận, SĐT, Nội dung hàng hoá) để nhập vào AutoJMS-Shot; đơn thiếu hoặc bị che thông tin người nhận được lấy bổ sung tự động.
+-- Máy giữ đồng bộ: **&quot;Last Update&quot;** nhích theo mỗi lần làm mới đơn từ JMS (vài phút một lần), không còn đứng ở giờ đồng bộ toàn bộ gần nhất.
+-- Bấm **Đồng bộ** mà JMS không trả dữ liệu (hết phiên đăng nhập, thiếu mã bưu cục, lỗi mạng): báo **&quot;Đồng bộ JMS thất bại — kiểm tra đăng nhập JMS rồi thử lại&quot;**, không còn hiện &quot;Đã đồng bộ&quot; giờ mới trong khi dữ liệu vẫn cũ.
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
     </channel>
