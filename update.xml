@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AutoJMSUpdateManifest schemaVersion="2">
-  <updatedAt>2026-11-26T13:27:58+07:00</updatedAt>
+  <updatedAt>2026-11-26T14:15:59+07:00</updatedAt>
   <githubRepo>https://github.com/Datt03-sss/AutoJMS-Update</githubRepo>
   <channels>
 <channel name="stable" enabled="true" prerelease="false">
@@ -83,8 +83,8 @@
 **DASHBOARD**
 -- Máy giữ đồng bộ: **&quot;Last Update&quot;** nhích theo mỗi lần làm mới đơn từ JMS (vài phút một lần), không còn đứng ở giờ đồng bộ toàn bộ gần nhất.
 -- Bấm **Đồng bộ** mà JMS không trả dữ liệu (hết phiên đăng nhập, thiếu mã bưu cục, lỗi mạng): báo **&quot;Đồng bộ JMS thất bại — kiểm tra đăng nhập JMS rồi thử lại&quot;**, không còn hiện &quot;Đã đồng bộ&quot; giờ mới trong khi dữ liệu vẫn cũ.
--- Bấm **Đồng bộ** thủ công ở máy không giữ đồng bộ (đã đăng nhập JMS): máy tự tra JMS toàn bộ tồn kho và cập nhật **&quot;Last Update&quot;** theo lần tra đó, không còn chỉ lấy lại danh sách cũ từ máy giữ đồng bộ.
--- Bấm **Đồng bộ** thủ công: phải cách lần đồng bộ xong trước 1 phút; bấm sớm hơn thì báo **&quot;Vừa đồng bộ xong, thử lại sau N giây&quot;**.
+-- Bấm **Đồng bộ** thủ công: phải cách lần đồng bộ **thành công** trước 1 phút; bấm sớm hơn thì báo **&quot;Vừa đồng bộ xong, thử lại sau N giây&quot;**. Đồng bộ lỗi (vd JMS hết phiên) thì bấm lại được ngay.
+-- Bấm **Đồng bộ** thủ công: phải cách lần đồng bộ **thành công** trước 1 phút; bấm sớm hơn thì báo **&quot;Vừa đồng bộ xong, thử lại sau N giây&quot;**. Đồng bộ lỗi (vd JMS hết phiên) thì bấm lại được ngay.
 Bản beta, có thể chưa ổn định.
       </releaseNotes>
     </channel>
